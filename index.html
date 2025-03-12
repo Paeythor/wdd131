@@ -1,11 +1,42 @@
+index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals - Your Name</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Your Name">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Schumann</h1>
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Section 1</h2>
+            <img src="images/image1.jpg" alt="Image 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+        <section class="card">
+            <h2>Section 2</h2>
+            <img src="images/image2.jpg" alt="Image 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name, Your State/Country</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
