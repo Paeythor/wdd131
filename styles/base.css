@@ -10,14 +10,14 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #00008B;
-    color: #333;
+    color: #00008B
     padding: 0;
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #00008B;
+    color: #c0c0c0;
     padding: 1rem;
     text-align: center;
 }
