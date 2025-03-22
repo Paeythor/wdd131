@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #00008B;
     color: #333;
     padding: 0;
 }
@@ -61,8 +61,8 @@ main {
 
 /* Card styles - common for all cards */
 .card {
-    background-color: #C8102E; /* 49ers Red background */
-    color: #D5A500; /* 49ers Gold text */
+    background-color: #C8102E; 
+    color: #c0c0c0; 
     padding: 1rem;
     text-align: center;
     border-radius: 15px; /* Rounded corners */
@@ -79,7 +79,7 @@ main {
 /* Footer styles */
 footer {
     background-color: #333;
-    color: white;
+    color: #00008B;
     padding: 1rem;
     text-align: center;
 }
@@ -95,7 +95,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-    background-color: #f4f4f4;
+    background-color: #00008B;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
@@ -130,8 +130,8 @@ footer p {
 
 /* Style for About Me title */
 .about-me-title {
-    background-color: #C8102E; /* 49ers Red */
-    color: #D5A500;            /* 49ers Yellow */
+    background-color: #000080; 
+    color: #c0c0c0;            
     padding: 10px;
     text-align: center;
     font-size: 2rem;
@@ -141,8 +141,8 @@ footer p {
 
 /* Style for Provo, Utah title */
 .provo, .utah-title {
-    background-color: #C8102E; /* 49ers Red */
-    color: #D5A500;            /* 49ers Yellow */
+    background-color: #000080 
+    color: #D5A500;            
     padding: 10px;
     text-align: center;
     font-size: 2rem;
@@ -152,8 +152,8 @@ footer p {
 
 /* Style for the Web Dev Resources */
 .web-dev-resources-container {
-    background-color: #C8102E; /* 49ers Red background */
-    color: #D5A500; /* 49ers Gold text */
+    background-color: #000080; 
+    color: #c0c0c0; 
     padding: 1rem;
     text-align: center;
     border-radius: 15px; /* Rounded corners */
@@ -174,18 +174,18 @@ footer p {
 }
 
 .web-dev-resources-container a {
-    color: #D5A500; /* 49ers Yellow */
+    color: #c0c0c0; 
     text-decoration: none;
     font-size: 18px;
 }
 
 .web-dev-resources-container a:hover {
-    color: white;
+    color: 800080#00008B;
 }
 
 /* Styling for "About Me" and "Provo" Sections */
 .about-me-container {
-    background-color: #C8102E;
+    background-color: #000080;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -193,5 +193,5 @@ footer p {
 
 .about-me-text {
     font-weight: bold;
-    color: #D5A500;
+    color: #c0c0c0;
 }
