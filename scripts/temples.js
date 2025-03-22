@@ -5,15 +5,17 @@ const hamburgerButton = document.querySelector('.hamburger');  // The hamburger 
 const navLinks = document.querySelector('.nav-links');  // The navigation links container
 
 // Add an event listener to the hamburger button to toggle the 'active' class on the navLinks
-hamburgerButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Toggle between showing and hiding the menu on mobile
-    if (navLinks.classList.contains('active')) {
-        hamburgerButton.textContent = 'X';  // Change the hamburger to an 'X' to close the menu
-    } else {
-        hamburgerButton.textContent = '☰';  // Revert back to the hamburger icon
-    }
-});
+if (hamburgerButton) {
+    hamburgerButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        // Toggle between showing and hiding the menu on mobile
+        if (navLinks.classList.contains('active')) {
+            hamburgerButton.textContent = 'X';  // Change the hamburger to an 'X' to close the menu
+        } else {
+            hamburgerButton.textContent = '☰';  // Revert back to the hamburger icon
+        }
+    });
+}
 
 // 2. Dynamic Footer Information (current year and last modified date)
 const yearSpan = document.getElementById('year');

@@ -1,0 +1,31 @@
+/* Default Mobile Navigation - Hidden on small screens */
+.nav-links {
+    display: none;
+}
+
+/* Show the nav menu when the hamburger is clicked */
+.nav-links.active {
+    display: block;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #C0C0C0;
+    cursor: pointer;
+}
+
+/* Desktop - Show the nav links inline */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide the hamburger icon on larger screens */
+    }
+    .nav-links {
+        display: flex; /* Make the navigation bar horizontal */
+    }
+    .nav-links li {
+        margin-left: 20px;
+    }
+}
