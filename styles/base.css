@@ -1,32 +1,36 @@
-/* General reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set the base font and line-height */
+/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #00008B;
-    color: #00008B
+    background-color: #003d3d; /* Darker blue background */
+    color: #C0C0C0; /* Silver text color */
     padding: 0;
+    text-shadow: 3px 3px 5px black; /* Long shadow for body text */
 }
 
-/* Header styles */
+/* Header Styles */
 header {
     background-color: #00008B;
-    color: #c0c0c0;
+    color: #C0C0C0; /* Silver text color */
     padding: 1rem;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for header */
+    text-shadow: 3px 3px 5px black; /* Long shadow for header text */
 }
 
 h1 {
     margin: 0;
+    text-shadow: 3px 3px 5px black; /* Long shadow for h1 */
 }
 
-/* Navigation styles */
+/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -38,160 +42,219 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #C0C0C0; /* Silver navigation links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    text-shadow: 3px 3px 5px black; /* Long shadow for links */
 }
 
 nav a:hover {
-    color: #f4b400;
+    color: #f4b400; /* Hover effect */
 }
 
-/* Main content styles */
+/* Main Content Layout */
 main {
     max-width: 1200px;
-    margin: 2rem auto; /* Added margin around main content */
+    margin: 2rem auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: 3fr 1fr; /* 3/4 width for About Me + Provo, 1/4 width for Web Dev Resources */
+    grid-template-columns: 3fr 1fr; /* 3:1 column split */
     gap: 2rem;
-    width: 100%;  /* Ensure the main content takes full width */
+    width: 100%;
 }
 
-/* Card styles - common for all cards */
+/* Card Styles (Common for all cards) */
 .card {
-    background-color: #C8102E; 
-    color: #c0c0c0; 
+    background-color: #003366; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
     padding: 1rem;
     text-align: center;
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for shaded edge */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    border: 3px solid black; /* Black border */
+    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+    margin-bottom: 2rem;
 }
 
-/* Card images */
+/* Card Images */
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: to give the image rounded corners */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
-/* Footer styles */
+/* Card Text */
+.card p {
+    font-size: 1rem;
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
-    color: #00008B;
+    color: #C0C0C0; /* Silver footer text */
     padding: 1rem;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow for footer */
 }
 
 footer p {
     margin: 0.5rem 0;
 }
 
-/* General styles for the "About Me" section */
+/* About Me Section Styles */
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
-    background-color: #00008B;
+    background-color: #003366; /* Dark blue background */
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
-    width: 100%;  /* Ensure the about me container takes full width */
-    margin-bottom: 20px; /* Additional margin between sections */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
 }
 
 .about-me-text {
     flex: 1;
     margin-right: 20px;
     max-width: 50%;
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
 }
 
 .about-me-image {
     flex: 1;
-    max-width: 40%;
+    max-width: 30%;
 }
 
 .about-me-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Round the corners of the image */
+    border-radius: 10px; /* Rounded image corners */
 }
 
-.provo img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px; /* Optional: to give the image rounded corners */
-    margin-top: 1rem;
-}
-
-/* Style for About Me title */
+/* About Me Title Styles */
 .about-me-title {
-    background-color: #000080; 
-    color: #c0c0c0;            
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
 }
 
-/* Style for Provo, Utah title */
-.provo, .utah-title {
-    background-color: #000080 
-    color: #D5A500;            
+/* Provo Section Title Styles */
+.provo-title {
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
 }
 
-/* Style for the Web Dev Resources */
+/* Provo Section Layout */
+.provo-container {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center the content */
+    background-color: #003366; /* Dark blue background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the Provo section */
+}
+
+.provo-text {
+    flex: 1; /* Allow text to take up remaining space */
+    max-width: 50%; /* Set a max width to ensure the text doesn't stretch too wide */
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow for Provo text */
+}
+
+.provo-image {
+    flex: 1; /* Allow the image to take up equal space */
+    max-width: 40%; /* Limit the image width */
+}
+
+.provo-image img {
+    width: 100%; /* Ensure the image takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round corners of the image */
+}
+
+/* Web Dev Resources Title Styles */
+.web-dev-resources-title {
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow for the title */
+}
+
+/* Web Dev Resources Styles */
 .web-dev-resources-container {
-    background-color: #000080; 
-    color: #c0c0c0; 
+    background-color: #003366; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
     padding: 1rem;
     text-align: center;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shaded edge */
-    margin-top: 20px;
-    width: 100%; /* Ensure the container spans full width */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin-bottom: 2rem;
 }
 
-/* Web Dev Resources links and list styling */
 .web-dev-resources-container ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 .web-dev-resources-container li {
-    margin-bottom: 10px;
+    margin: 0.5rem 0;
 }
 
 .web-dev-resources-container a {
-    color: #c0c0c0; 
+    color: #C0C0C0; /* Silver links */
     text-decoration: none;
-    font-size: 18px;
+    transition: color 0.3s ease;
+    text-shadow: 3px 3px 5px black; /* Long shadow for links */
 }
 
 .web-dev-resources-container a:hover {
-    color: 800080#00008B;
+    color: #f4b400; /* Hover effect */
 }
 
-/* Styling for "About Me" and "Provo" Sections */
-.about-me-container {
-    background-color: #000080;
-    padding: 20px;
+/* Web Dev Resources Card Positioning */
+.card-3 {
+    grid-column: 2; /* Places the Web Dev Resources card in the second column (right column) */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: space-between; /* Ensures space between header and content */
+    height: 100%; /* Ensures it takes up the full height of the grid cell */
+    min-height: 100%; /* Makes sure it stretches at least to the full height */
+}
+
+/* To ensure the Web Dev Resources content fills available space */
+.web-dev-resources-container {
+    flex: 1; /* Makes sure this container grows to fill remaining space */
+    background-color: #003366; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 1rem;
+    text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-me-text {
-    font-weight: bold;
-    color: #c0c0c0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin-bottom: 2rem;
 }
