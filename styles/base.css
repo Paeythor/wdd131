@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    padding: 0;
 }
 
 /* Header styles */
@@ -50,23 +51,29 @@ nav a:hover {
 /* Main content styles */
 main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto; /* Added margin around main content */
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr; /* 3/4 width for About Me + Provo, 1/4 width for Web Dev Resources */
     gap: 2rem;
+    width: 100%;  /* Ensure the main content takes full width */
 }
 
+/* Card styles - common for all cards */
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #C8102E; /* 49ers Red background */
+    color: #D5A500; /* 49ers Gold text */
     padding: 1rem;
     text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for shaded edge */
 }
 
+/* Card images */
 .card img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Optional: to give the image rounded corners */
 }
 
 /* Footer styles */
@@ -79,4 +86,112 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/* General styles for the "About Me" section */
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+    width: 100%;  /* Ensure the about me container takes full width */
+    margin-bottom: 20px; /* Additional margin between sections */
+}
+
+.about-me-text {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 50%;
+}
+
+.about-me-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Round the corners of the image */
+}
+
+.provo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px; /* Optional: to give the image rounded corners */
+    margin-top: 1rem;
+}
+
+/* Style for About Me title */
+.about-me-title {
+    background-color: #C8102E; /* 49ers Red */
+    color: #D5A500;            /* 49ers Yellow */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Style for Provo, Utah title */
+.provo, .utah-title {
+    background-color: #C8102E; /* 49ers Red */
+    color: #D5A500;            /* 49ers Yellow */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Style for the Web Dev Resources */
+.web-dev-resources-container {
+    background-color: #C8102E; /* 49ers Red background */
+    color: #D5A500; /* 49ers Gold text */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shaded edge */
+    margin-top: 20px;
+    width: 100%; /* Ensure the container spans full width */
+}
+
+/* Web Dev Resources links and list styling */
+.web-dev-resources-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.web-dev-resources-container li {
+    margin-bottom: 10px;
+}
+
+.web-dev-resources-container a {
+    color: #D5A500; /* 49ers Yellow */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.web-dev-resources-container a:hover {
+    color: white;
+}
+
+/* Styling for "About Me" and "Provo" Sections */
+.about-me-container {
+    background-color: #C8102E;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+    font-weight: bold;
+    color: #D5A500;
 }

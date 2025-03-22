@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Jacob Schumann - HTML, CSS, JavaScript.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jacob Schumann - HTML, CSS, JavaScript.">
     <meta name="author" content="Jacob Schumann">
-    <title>WDD 131 – Dynamic Web Fundamentals - Jacob Schumann</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jacob Schumann</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script defer src="scripts/getdates.js"></script>
@@ -15,30 +15,59 @@
         <h1>WDD 131 - Dynamic Web Fundamentals</h1>
         <nav>
             <ul>
-                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                <li><a href="https://www.linkedin.com/in/jacob-schumann-1b849470/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/courses/7888/" title="WDD131">WDD 131</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/22?lang=eng&id=p32,p70#p32" title="Scripture">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="card">
-            <h2>Section 1</h2>
-            <img src="images/your-image1.jpg" alt="Description of image 1">
-            <p>This is some content for the first section.</p>
+        <section class="card-1">
+            <h2 class="about-me-title">About Me</h2>
+            <div class="about-me-container">
+                <div class="about-me-text">
+                    <p>
+                        My name is Jacob Schumann, and I am from Pleasant Hill, CA originally but now have lived just over half my life in Provo, Utah. Provo is beautiful and home to Brigham Young University. I have always had a passion for technology, creative writing, and web development. I am currently pursuing coding, digital marketing, and computer programming, hoping to develop my own business and potentially skills for another job. In my free time, I play with my dogs and work on creative endeavors.
+                    </p>
+                </div>
+                <div class="about-me-image">
+                    <img src="images/jacob_photo.jpg" alt="Jacob Schumann">
+                </div>
+            </div>
+            <div class="provo">
+                <h2>Provo, Utah</h2>
+                <img src="images/ymountain.jpg" alt="Y Mountain" />
+                <p>
+                    Provo is a city in Utah, located about 45 minutes south of Salt Lake City. It is known for being the home of Brigham Young University and is surrounded by scenic mountains. Provo has a strong tech scene, making it an ideal location for those pursuing careers in technology and innovation.
+                </p>
+            </div>
         </section>
-        <section class="card">
-            <h2>Section 2</h2>
-            <img src="images/your-image2.jpg" alt="Description of image 2">
-            <p>This is some content for the second section.</p>
+        
+
+        <section class="card-3">
+            <div class="web-dev-resources-container">
+                <div class="web-dev-resources-text">
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/css/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://www.facebook.com/byu.pathway.2024/" title="Facebook Page">Facebook Page</a></li>
+            </ul>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Jacob Schumann, Utah</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="currentyear">2025</span> - Jacob Schumann - Provo, UT</p>
+        <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
     </footer>
+
+    <script>
+        // Script to show the last modified date
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
 </body>
 </html>
