@@ -1,0 +1,7 @@
+/* temples-large.css - For Larger Screens */
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+}
