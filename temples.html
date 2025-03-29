@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Schumann">
+    <meta name="description" content="Beautiful temples">
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
@@ -24,56 +26,82 @@
     </header>
 
     <main>
-        <h1>Home</h1>
+        <h1>Temple Album</h1> <!-- Primary Heading for the section -->
+
         <section class="temple-gallery">
+            <h2>Payson Utah Temple</h2> <!-- Subheading for the first temple -->
             <figure>
                 <img src="images/payson-utah-temple.jpg" alt="Payson Utah Temple">
                 <figcaption>Payson Utah Temple</figcaption>
             </figure>
+
+            <h2>San Diego California Temple</h2> <!-- Subheading for the second temple -->
             <figure>
                 <img src="images/san-diego-california-temple.jpg" alt="San Diego California Temple">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
+
+            <h2>Laie Hawaii Temple</h2> <!-- Subheading for the third temple -->
             <figure>
                 <img src="images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple">
                 <figcaption>Laie Hawaii Temple</figcaption>
             </figure>
+
+            <h2>Provo City Center Temple</h2> <!-- Subheading for the fourth temple -->
             <figure>
                 <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple">
                 <figcaption>Provo City Center Temple</figcaption>
             </figure>
+
+            <h2>Mexico City Mexico Temple</h2> <!-- Subheading for the fifth temple -->
             <figure>
                 <img src="images/mexico-city-mexico-temple.jpg" alt="Mexico City Mexico Temple">
                 <figcaption>Mexico City Mexico Temple</figcaption>
             </figure>
+
+            <h2>Mexico City Benemerito Mexico Temple</h2> <!-- Subheading for the sixth temple -->
             <figure>
                 <img src="images/mexico-city-benemerito-mexico-temple.jpg" alt="Mexico City Benemerito Mexico Temple">
                 <figcaption>Mexico City Benemerito Mexico Temple</figcaption>
             </figure>
+
+            <h2>Oakland California Temple</h2> <!-- Subheading for the seventh temple -->
             <figure>
                 <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
                 <figcaption>Oakland California Temple</figcaption>
             </figure>
+
+            <h2>Provo Utah Rock Canyon Temple</h2> <!-- Subheading for the eighth temple -->
             <figure>
                 <img src="images/provo-utah-rock-canyon-temple.jpg" alt="Provo Utah Rock Canyon Temple">
                 <figcaption>Provo Utah Rock Canyon Temple</figcaption>
             </figure>
+
+            <h2>Barcelona Spain Temple</h2> <!-- Subheading for the ninth temple -->
             <figure>
                 <img src="images/barcelona-spain-temple.jpg" alt="Barcelona Spain Temple">
                 <figcaption>Barcelona Spain Temple</figcaption>
             </figure>
+
+            <h2>Nauvoo Illinois Temple</h2> <!-- Subheading for the tenth temple -->
             <figure>
                 <img src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo Illinois Temple">
                 <figcaption>Nauvoo Illinois Temple</figcaption>
             </figure>
+
+            <h2>Mount Timpanogos Utah Temple</h2> <!-- Subheading for the eleventh temple -->
             <figure>
                 <img src="images/mount-timpanogos-utah-temple.jpg" alt="Mount Timpanogos Utah Temple">
                 <figcaption>Mount Timpanogos Utah Temple</figcaption>
             </figure>
+
+            <h2>Orem Utah Temple</h2> <!-- Subheading for the twelfth temple -->
             <figure>
                 <img src="images/orem-utah-temple.jpg" alt="Orem Utah Temple">
                 <figcaption>Orem Utah Temple</figcaption>
             </figure>
+
+            <h2>Queretaro Mexico Temple</h2> <!-- Subheading for the thirteenth temple -->
             <figure>
                 <img src="images/queretaro-mexico-temple.jpg" alt="Queretaro Mexico Temple">
                 <figcaption>Queretaro Mexico Temple</figcaption>
@@ -87,8 +115,8 @@
 
     <script>
         // JavaScript to handle hamburger menu toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
         
         hamburger.addEventListener('click', () => {
             // Toggle the 'active' class on the navigation
