@@ -1,7 +1,29 @@
-/* temples-large.css - For Larger Screens */
-
+/* Large Screen Styles */
 @media (min-width: 768px) {
     main {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of elements */
+        gap: 2rem; /* Space between items */
+    }
+
+    .temple-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+        gap: 2rem;
+    }
+
+    /* Flex settings for figures in temple-gallery */
+    .temple-gallery figure {
+        flex: 1 1 33%; /* Each figure takes up 33% of the container's width */
+        text-align: center;
+    }
+
+    .temple-gallery img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for images */
     }
 }

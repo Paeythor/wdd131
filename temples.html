@@ -12,7 +12,7 @@
     <header>
         <h1>Temple Album</h1>
         <nav>
-            <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
@@ -24,63 +24,80 @@
     </header>
 
     <main>
-        <h1>Temple Gallery</h1>
-        <figure>
-            <img src="images/payson-utah-temple.jpg" alt="Payson Utah Temple">
-            <figcaption>Payson Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/san-diego-california-temple.jpg" alt="San Diego California Temple">
-            <figcaption>San Diego California Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple">
-            <figcaption>Laie Hawaii Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple">
-            <figcaption>Provo City Center Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/mexico-city-mexico-temple.jpg" alt="Mexico City Mexico Temple">
-            <figcaption>Mexico City Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/mexico-city-benemerito-mexico-temple.jpg" alt="Mexico City Benemerito Mexico Temple">
-            <figcaption>Mexico City Benemerito Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
-            <figcaption>Oakland California Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/provo-utah-rock-canyon-temple.jpg" alt="Provo Utah Rock Canyon Temple">
-            <figcaption>Provo Utah Rock Canyon Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/barcelona-spain-temple.jpg" alt="Barcelona Spain Temple">
-            <figcaption>Barcelona Spain Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo Illinois Temple">
-            <figcaption>Nauvoo Illinois Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/mount-timpanogos-utah-temple.jpg" alt="Mount Timpanogos Utah Temple">
-            <figcaption>Mount Timpanogos Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/orem-utah-temple.jpg" alt="Orem Utah Temple">
-            <figcaption>Orem Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/queretaro-mexico-temple.jpg" alt="Queretaro Mexico Temple">
-            <figcaption>Queretaro Mexico Temple</figcaption>
-        </figure>
+        <h1>Home</h1>
+        <section class="temple-gallery">
+            <figure>
+                <img src="images/payson-utah-temple.jpg" alt="Payson Utah Temple">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diego-california-temple.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico-city-mexico-temple.jpg" alt="Mexico City Mexico Temple">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico-city-benemerito-mexico-temple.jpg" alt="Mexico City Benemerito Mexico Temple">
+                <figcaption>Mexico City Benemerito Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
+                <figcaption>Oakland California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-utah-rock-canyon-temple.jpg" alt="Provo Utah Rock Canyon Temple">
+                <figcaption>Provo Utah Rock Canyon Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/barcelona-spain-temple.jpg" alt="Barcelona Spain Temple">
+                <figcaption>Barcelona Spain Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo Illinois Temple">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mount-timpanogos-utah-temple.jpg" alt="Mount Timpanogos Utah Temple">
+                <figcaption>Mount Timpanogos Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/orem-utah-temple.jpg" alt="Orem Utah Temple">
+                <figcaption>Orem Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/queretaro-mexico-temple.jpg" alt="Queretaro Mexico Temple">
+                <figcaption>Queretaro Mexico Temple</figcaption>
+            </figure>
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
     </footer>
+
+    <script>
+        // JavaScript to handle hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            // Toggle the 'active' class on the navigation
+            navLinks.classList.toggle('active');
+        });
+
+        // Dynamically insert the current year and last modified date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
 </body>
 </html>
