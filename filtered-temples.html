@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Schumann">
+    <meta name="description" content="Beautiful temples">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1> <!-- Primary Heading for the section -->
+
+        <section class="temple-gallery">
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        // JavaScript to handle hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            // Toggle the 'active' class on the navigation
+            navLinks.classList.toggle('active');
+        });
+
+        // Dynamically insert the current year and last modified date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
