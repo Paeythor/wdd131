@@ -28,10 +28,10 @@ h1 {
 /* Navigation Styles */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #33006F;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
 }
 
 nav ul {
@@ -94,10 +94,15 @@ footer {
 
 /* Mobile Specific - Hide Navigation links and show hamburger menu on smaller screens */
 @media (max-width: 768px) {
-    nav .nav-links {
+    nav ul {
         display: none;
         flex-direction: column;
         padding: 1rem 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     .hamburger {
@@ -106,6 +111,22 @@ footer {
 
     .temple-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .temple-gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Large Screen Styles (Tablets and up) */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+        gap: 2em;
     }
 
     .temple-gallery img {
