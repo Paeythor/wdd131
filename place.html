@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scotland</title>
+    <link rel="stylesheet" href="scotlandstyles.css">
+    <script defer src="scotlandscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scotland</h1>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#data">Data</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/edinburghcastle.jpeg" alt="Capital" class="large-image">
+            <img src="images/Aberdeenshire.jpg" alt="View" class="large-image">
+        </section>
+
+        <section id="data" class="info-box">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 78,789 square kilometers</p>
+            <p><strong>Population:</strong> 5,490,100</p>
+            <p><strong>Capital:</strong> Edinburgh</p>
+            <p><strong>Languages:</strong> English, Scots, Scottish Gaelic, and British Sign Language</p>
+            <p><strong>Currency:</strong> Pound Sterling</p>
+            <p><strong>Time Zone:</strong> UTC+0</p>
+            <p><strong>Calling Code:</strong> 011 (US exit code) + 44</p>
+            <p><strong>Internet TLD:</strong> .scot</p>
+        </section>
+
+        <section id="weather" class="info-box">
+            <h2>Weather</h2>
+            <p><strong>Temperature:</strong> 7°C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> 15 km/h</p>
+            <p><strong>Wind Chill:</strong> 5°C</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear">2025</span> - Jacob Schumann - Provo, UT</p>
+        <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Update last modified date
+            const lastModifiedElement = document.getElementById("lastModifiedDate");
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = new Date(document.lastModified).toLocaleString();
+            }
+        });
+    </script>
+</body>
+</html>
