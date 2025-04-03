@@ -15,12 +15,13 @@
 </head>
 <body>
     <header>
+    <button id="menu" aria-label="menu"></button></button>
         <h1>Temple Album</h1> <!-- Only one h1 for the page header -->
 
-        <nav>
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+        <nav class="navigation">
+        <h1>Temple Album</h1>
             <ul class="nav-links">
-                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="home" class="active">Home</a></li>
                 <li><a href="#" id="old">Old</a></li>
                 <li><a href="#" id="new">New</a></li>
                 <li><a href="#" id="large">Large</a></li>
@@ -28,59 +29,16 @@
             </ul>
         </nav>
     </header>
-
+    <h2 id="filter-title">Home</h2>
+    <h3 id="reveal"></h3>
     <main>
-        <!-- Section for all Temples (Home) -->
-        <h2 id="home-heading">All Temples</h2>
-        <section class="temple-gallery res-grid" id="temple-gallery">
-            <!-- All temple cards will be injected here dynamically -->
-        </section>
-    
-        <!-- Section for Old Temples -->
-        <h2 id="old-heading">Old Temples</h2>
-        <section class="temple-gallery res-grid" id="old-temples">
-            <!-- Old temple cards will be injected here dynamically -->
-        </section>
-    
-        <!-- Section for New Temples -->
-        <h2 id="new-heading">New Temples</h2>
-        <section class="temple-gallery res-grid" id="new-temples">
-            <!-- New temple cards will be injected here dynamically -->
-        </section>
-    
-        <!-- Section for Large Temples -->
-        <h2 id="large-heading">Large Temples</h2>
-        <section class="temple-gallery res-grid" id="large-temples">
-            <!-- Large temple cards will be injected here dynamically -->
-        </section>
-    
-        <!-- Section for Small Temples -->
-        <h2 id="small-heading">Small Temples</h2>
-        <section class="temple-gallery res-grid" id="small-temples">
-            <!-- Small temple cards will be injected here dynamically -->
-        </section>
     </main>
     
     <footer>
-        <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
+        <p>
+            ©<span id="currentyear"></span> images/superman.ico Jacob Schumann images/superman.ico | Provo, UT
+        </p>
+        <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
     </footer>
-
-    <script>
-        // JavaScript to handle hamburger menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            // Toggle the 'active' class on the navigation
-            navLinks.classList.toggle('active');
-            // Toggle aria-expanded state
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !isExpanded);
-        });
-
-        // Dynamically insert the current year and last modified date
-        document.getElementById('year').textContent = new Date().getFullYear();
-        document.getElementById('last-modified').textContent = document.lastModified;
-    </script>
 </body>
 </html>

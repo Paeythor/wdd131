@@ -52,7 +52,7 @@ const temples = [
       location: "Phoenix, Arizona, United States",
       dedicated: "2014, November, 16",
       area: 27000,
-      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/phoenix-arizona-temple/phoenix-arizona-temple-lds-224949-wallpaper.jpg",
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/phoenix-arizona-temple/phoenix-arizona-temple-36265.jpg",
       dedicatedYear: 2014
   },
   {
@@ -60,7 +60,7 @@ const temples = [
       location: "Querétaro, Querétaro, Mexico",
       dedicated: "To be announced",
       area: 27500,
-      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/queretaro-mexico-temple/queretaro-mexico-temple-lds-123456-wallpaper.jpg",
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/queretaro-mexico-temple/queretaro-mexico-temple-23845.jpg",
       dedicatedYear: null
   }
 ];
