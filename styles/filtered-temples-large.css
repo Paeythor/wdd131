@@ -14,9 +14,10 @@
     /* Temple Gallery Styles */
     .temple-gallery {
         display: grid; /* Use grid layout to align cards neatly */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically create columns with min-width of 300px */
+        grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
         gap: 2rem; /* Space between items */
         width: 100%;
+        padding: 0; /* Remove padding for grid container */
     }
 
     /* Style each temple card */
@@ -28,13 +29,13 @@
         background-color: #fff;
         border-radius: 10px; /* Rounded corners for the cards */
         padding: 1rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visual hierarchy */
+        box-shadow: 0 4px 8px #cccccc; /* Box-shadow in hex */
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
     }
 
     /* Temple image styles */
     .temple-gallery img {
-        max-width: 100%;
+        max-width: 100%; /* Ensures images scale properly */
         height: auto;
         border-radius: 8px; /* Round the corners of the images */
         margin-bottom: 1rem; /* Space below images */
@@ -44,25 +45,25 @@
     .temple-gallery h3 {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #333;
+        color: #333333; /* Dark gray for the temple name */
         margin-bottom: 0.5rem;
     }
 
     /* Style for other temple information (location, dedication, etc.) */
     .temple-gallery p {
         font-size: 0.9rem;
-        color: #666;
+        color: #666666; /* Medium gray for general text */
         margin-bottom: 0.5rem;
     }
 
     .temple-gallery .label {
         font-weight: bold; /* Make labels stand out */
-        color: #333;
+        color: #333333; /* Dark gray for labels */
     }
 
     /* Hover effect for temple cards */
     .temple-gallery section:hover {
         transform: translateY(-10px); /* Slight lift effect on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        box-shadow: 0 8px 16px #999999; /* Darker shadow on hover, using hex */
     }
 }

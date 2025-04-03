@@ -1,161 +1,88 @@
-/* General Reset */
-* {
+/* General mobile styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
-/* Base Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: black;
-    padding: 0;
-}
-
-/* Header Styles */
 header {
-    background-color: #33006F;
+    background-color: #333333; /* Dark gray background for header */
     color: white;
-    padding: 1rem;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
-    margin: 0;
-}
-
-/* Navigation Styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #33006F;
-    padding: 1rem 2rem;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+/* Hide the navigation menu by default on mobile */
+.navigation {
+    display: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
+    text-align: center;
 }
 
-nav li {
-    margin: 0 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
-}
-
-nav a:hover {
-    color: #f4b400;
+.navigation li {
+    padding: 10px;
+    cursor: pointer;
 }
 
 .hamburger {
+    display: block; /* Show hamburger menu */
     font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    display: none;
-}
-
-/* Temple Gallery Styles */
-.temple-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-}
-
-figure {
-    margin: 0;
+    cursor: pointer;
     text-align: center;
+    padding: 10px;
+}
+
+/* Style for the temple gallery (mobile-specific) */
+#temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff; /* White background for temple cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc; /* Light gray shadow */
 }
 
 img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-/* Footer Styles */
+label {
+    font-weight: bold;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #333333; /* Dark gray footer */
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 10px;
 }
 
-/* Mobile Specific - Hide Navigation links and show hamburger menu on smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        padding: 1rem 0;
-        width: 100%;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    /* Adjust the temple gallery layout for smaller screens */
-    .temple-gallery {
-        grid-template-columns: 1fr; /* One column on mobile */
-    }
-
-    .temple-gallery img {
-        max-width: 100%;
-    }
+/* Mobile-specific styles for the navigation */
+.hamburger.open + .navigation {
+    display: block; /* Show navigation when hamburger is open */
 }
 
-/* Large Screen Styles (Tablets and up) */
+/* Add responsiveness: adjust the layout for larger screens (>= 768px) */
 @media (min-width: 768px) {
-    nav ul {
-        display: flex;
+    /* Temple gallery: switch to 4 columns on larger screens */
+    #temple-gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+        gap: 20px;
     }
-
-    /* Adjust the temple gallery layout for larger screens */
-    .temple-gallery {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
-        gap: 2rem;
-    }
-
-    .temple-gallery img {
-        max-width: 100%;
-    }
-}
-
-/* Extra Large Screen Styles (Desktops and up) */
-@media (min-width: 1024px) {
-    /* Main container to center content and add padding */
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    /* Enhance temple gallery layout on extra large screens */
-    .temple-gallery {
-        grid-template-columns: repeat(4, 1fr); /* Four columns on extra large screens */
-    }
-
-    /* Improve temple image sizes */
-    .temple-gallery img {
-        border-radius: 10px;
+    
+    /* Optionally, you could adjust padding or margins for larger screens */
+    section {
+        padding: 15px; /* Adjust padding for larger screens */
     }
 }
