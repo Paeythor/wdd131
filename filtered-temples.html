@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="scripts/filtered-temples.js"></script>
 </head>
 <body>
     <header>
-        <h1>Temple</h1>
+        <h1>Temple Album</h1> <!-- Only one h1 for the page header -->
+
         <nav>
-            <button class="hamburger" aria-label="Menu">&#9776;</button>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
@@ -31,11 +30,9 @@
     </header>
 
     <main>
-        <h1>Home</h1> <!-- Primary Heading for the section -->
-
+        <h2>Home</h2> <!-- Use h2 instead of h1 for sections -->
         <section class="temple-gallery">
-            
-            
+            <!-- Gallery content can be added here -->
         </section>
     </main>
 
@@ -47,10 +44,13 @@
         // JavaScript to handle hamburger menu toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        
+
         hamburger.addEventListener('click', () => {
             // Toggle the 'active' class on the navigation
             navLinks.classList.toggle('active');
+            // Toggle aria-expanded state
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !isExpanded);
         });
 
         // Dynamically insert the current year and last modified date
