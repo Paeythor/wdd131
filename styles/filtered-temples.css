@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f4; /* Light gray background */
 }
 
+/* Header Styles */
 header {
     background-color: #333333; /* Dark gray background for header */
     color: white;
@@ -14,9 +15,9 @@ header {
     text-align: center;
 }
 
-/* Hide the navigation menu by default on mobile */
+/* Navigation Styles */
 .navigation {
-    display: none;
+    display: none; /* Hide by default */
     list-style: none;
     padding: 0;
     text-align: center;
@@ -41,6 +42,7 @@ header {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     gap: 20px;
     padding: 20px;
+    margin: 0 auto; /* Center the gallery */
 }
 
 section {
@@ -48,6 +50,10 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc; /* Light gray shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 img {
@@ -58,9 +64,10 @@ img {
 
 label {
     font-weight: bold;
+    color: #333333; /* Darker color for labels */
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
     background-color: #333333; /* Dark gray footer */
     color: white;
@@ -73,16 +80,39 @@ footer {
     display: block; /* Show navigation when hamburger is open */
 }
 
-/* Add responsiveness: adjust the layout for larger screens (>= 768px) */
+/* Media Query for larger screens (>= 768px) */
 @media (min-width: 768px) {
     /* Temple gallery: switch to 4 columns on larger screens */
     #temple-gallery {
         grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
         gap: 20px;
+        padding: 30px;
     }
     
-    /* Optionally, you could adjust padding or margins for larger screens */
+    /* Adjust the padding for temple cards on larger screens */
     section {
         padding: 15px; /* Adjust padding for larger screens */
+    }
+
+    /* Header and Footer Padding Adjustments for Larger Screens */
+    header, footer {
+        padding: 15px 0; /* Increase padding for better visual balance */
+    }
+
+    /* Style for the label on larger screens (optional) */
+    label {
+        font-size: 1rem;
+    }
+}
+
+/* Optional: You can also add other custom styles for even larger screens (>= 1024px) if needed */
+@media (min-width: 1024px) {
+    /* Make minor adjustments or increase font sizes on larger devices */
+    section {
+        padding: 20px; /* Larger padding for bigger screens */
+    }
+
+    label {
+        font-size: 1.2rem; /* Slightly larger font for better readability */
     }
 }

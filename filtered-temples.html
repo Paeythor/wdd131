@@ -15,11 +15,11 @@
 </head>
 <body>
     <header>
-        <!-- Fixed the extra closing button tag -->
-        <button id="menu" aria-label="menu"></button>
-        <h1>Temple Album</h1> <!-- Only one h1 for the page header -->
+        <!-- Hamburger Menu Button -->
+        <button id="menu" class="hamburger" aria-label="Open menu">&#9776;</button> <!-- Using the hamburger icon (three horizontal bars) -->
+        <h1>Temple Album</h1>
 
-        <!-- Removed the redundant <h1> in the navigation -->
+        <!-- Navigation Links -->
         <nav class="navigation">
             <ul class="nav-links">
                 <li><a href="#" id="home" class="active">Home</a></li>
@@ -30,8 +30,10 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div id="temple-gallery"></div>
+        <!-- Temple Gallery Section -->
+        <div id="temple-gallery" class="temple-gallery"></div>
     </main>
 
     <footer>
@@ -39,6 +41,6 @@
         <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="filtered-temples.js"></script>
+    <script src="scripts/filtered-temples.js"></script>
 </body>
 </html>

@@ -17,7 +17,6 @@
         grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
         gap: 2rem; /* Space between items */
         width: 100%;
-        padding: 0; /* Remove padding for grid container */
     }
 
     /* Style each temple card */
@@ -35,7 +34,7 @@
 
     /* Temple image styles */
     .temple-gallery img {
-        max-width: 100%; /* Ensures images scale properly */
+        max-width: 100%;
         height: auto;
         border-radius: 8px; /* Round the corners of the images */
         margin-bottom: 1rem; /* Space below images */
