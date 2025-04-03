@@ -13,7 +13,7 @@
         width: 300px; /* Define width for the cards */
         height: auto;
         padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to make cards stand out */
+        box-shadow: 0 4px 6px #0000001A; /* Add shadow to make cards stand out */
         border-radius: 8px;
         background-color: var(--card-bg-color); /* Light blue background for cards */
     }
