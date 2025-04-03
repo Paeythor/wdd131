@@ -14,6 +14,7 @@ body {
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #33006F;
     color: white;
@@ -109,8 +110,9 @@ footer {
         display: block;
     }
 
+    /* Adjust the temple gallery layout for smaller screens */
     .temple-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* One column on mobile */
     }
 
     .temple-gallery img {
@@ -124,12 +126,36 @@ footer {
         display: flex;
     }
 
+    /* Adjust the temple gallery layout for larger screens */
     .temple-gallery {
         grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
-        gap: 2em;
+        gap: 2rem;
     }
 
     .temple-gallery img {
         max-width: 100%;
+    }
+}
+
+/* Extra Large Screen Styles (Desktops and up) */
+@media (min-width: 1024px) {
+    /* Main container to center content and add padding */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Enhance temple gallery layout on extra large screens */
+    .temple-gallery {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on extra large screens */
+    }
+
+    /* Improve temple image sizes */
+    .temple-gallery img {
+        border-radius: 10px;
     }
 }

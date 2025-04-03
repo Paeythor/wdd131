@@ -1,32 +1,68 @@
 /* Large Screen Styles */
 @media (min-width: 768px) {
+
+    /* Main container to center content and add padding */
     main {
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
         display: flex;
-        flex-wrap: wrap; /* Allow wrapping of elements */
-        gap: 2rem; /* Space between items */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 2rem; /* Space between elements */
     }
 
     /* Temple Gallery Styles */
     .temple-gallery {
-        display: flex;
-        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-        justify-content: space-between; /* Distribute items evenly */
+        display: grid; /* Use grid layout to align cards neatly */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically create columns with min-width of 300px */
         gap: 2rem; /* Space between items */
         width: 100%;
     }
 
-    /* Flex settings for figures in temple-gallery */
-    .temple-gallery figure {
-        flex: 1 1 30%; /* Each figure takes up approximately 30% of the container's width */
-        text-align: center;
+    /* Style each temple card */
+    .temple-gallery section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px; /* Rounded corners for the cards */
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visual hierarchy */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
     }
 
+    /* Temple image styles */
     .temple-gallery img {
-        max-width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 10px; /* Rounded corners for images */
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Round the corners of the images */
+        margin-bottom: 1rem; /* Space below images */
+    }
+
+    /* Style for temple name (h3) */
+    .temple-gallery h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Style for other temple information (location, dedication, etc.) */
+    .temple-gallery p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+
+    .temple-gallery .label {
+        font-weight: bold; /* Make labels stand out */
+        color: #333;
+    }
+
+    /* Hover effect for temple cards */
+    .temple-gallery section:hover {
+        transform: translateY(-10px); /* Slight lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
     }
 }
