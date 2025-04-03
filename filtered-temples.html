@@ -20,42 +20,47 @@
         <nav>
             <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Section for all Temples (Home) -->
+        <h2 id="home-heading">All Temples</h2>
+        <section class="temple-gallery res-grid" id="temple-gallery">
+            <!-- All temple cards will be injected here dynamically -->
+        </section>
+    
         <!-- Section for Old Temples -->
-        <h2>Old Temples</h2> <!-- Section heading for old temples -->
-        <section class="temple-gallery res-grid old-temples">
+        <h2 id="old-heading">Old Temples</h2>
+        <section class="temple-gallery res-grid" id="old-temples">
             <!-- Old temple cards will be injected here dynamically -->
         </section>
     
         <!-- Section for New Temples -->
-        <h2>New Temples</h2> <!-- Section heading for new temples -->
-        <section class="temple-gallery res-grid new-temples">
+        <h2 id="new-heading">New Temples</h2>
+        <section class="temple-gallery res-grid" id="new-temples">
             <!-- New temple cards will be injected here dynamically -->
         </section>
     
         <!-- Section for Large Temples -->
-        <h2>Large Temples</h2> <!-- Section heading for large temples -->
-        <section class="temple-gallery res-grid large-temples">
+        <h2 id="large-heading">Large Temples</h2>
+        <section class="temple-gallery res-grid" id="large-temples">
             <!-- Large temple cards will be injected here dynamically -->
         </section>
     
         <!-- Section for Small Temples -->
-        <h2>Small Temples</h2> <!-- Section heading for small temples -->
-        <section class="temple-gallery res-grid small-temples">
+        <h2 id="small-heading">Small Temples</h2>
+        <section class="temple-gallery res-grid" id="small-temples">
             <!-- Small temple cards will be injected here dynamically -->
         </section>
     </main>
     
-
     <footer>
         <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
     </footer>
