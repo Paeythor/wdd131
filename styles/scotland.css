@@ -171,7 +171,7 @@ a::after {
     display: block;
     width: 100%;
     height: 50px; /* Height of the decorative shape */
-    background: url('path-to-your-wave-image.svg') no-repeat center center;
+    background: url('images/summer_sunshine_icon.svg') no-repeat center center;
     background-size: cover;
     margin-top: 20px; /* Space between the hero and the decoration */
 }
