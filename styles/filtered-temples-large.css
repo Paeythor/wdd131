@@ -42,10 +42,6 @@ footer {
     overflow: hidden; /* Ensures the ball doesn't go outside */
 }
 
-header h1, h2, footer p {
-    /* Removed animation */
-}
-
 /* Create a glowing ball on the inner border of the header and footer */
 header::before, footer::before {
     content: '';
@@ -86,7 +82,6 @@ footer::before {
     font-size: 16px; /* Set the font size */
     font-weight: bold; /* Make the font bold */
     position: relative; /* Needed for animations */
-    transition: color 33s ease; /* Smooth transition for text color */
 }
 
 /* Navigation links hover effect */
@@ -144,11 +139,10 @@ section:hover {
 
     /* Heading for 'Explore Temples by Category' */
     h2 {
-        color: #000080; /* Navy Blue */
+        color: white; /* Corrected: Keep text color white */
         font-size: 1rem; /* Same font size as navigation links */
         font-weight: bold; /* Same font weight as navigation links */
         text-align: center; /* Center the heading for consistency */
-        color: white; /* Set text color to white or adjust based on your theme */
         margin: 10px 0; /* Space it slightly from the header */
         padding: 0 10px; /* Optional: Add padding for better spacing */
     }
