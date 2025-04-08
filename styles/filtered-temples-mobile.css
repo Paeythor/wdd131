@@ -1,57 +1,56 @@
+:root {
+    --background-color: #4169E1;  /* Set your desired background color */
+    --emphasis-color: #FFD700;    /* Set an accent or emphasis color */
+    --main-color: #ffffff;        /* Set your main color */
+    --font-color1: #333333;       /* Set the primary font color */
+    --accent-color: #00CCCC;      /* Set an accent color */
+    --accent-color2: #FF6347;     /* Another accent color */
+    --font-one: 'Merriweather', serif;  /* Primary font */
+    --font-two: 'Arial', sans-serif;    /* Secondary font */
+    --font-three: 'Courier New', monospace; /* Third font */
+}
+
+/* Now you can use these variables throughout your CSS */
+
 body {
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #4169E1;
+    font-family: var(--font-one);
+    background-color: var(--background-color);
+    color: var(--font-color1);
 }
 
 header {
-    background-color: #4169E1;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--main-color);
     padding: 10px 0;
     text-align: center;
 }
 
-.navigation {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.navigation li {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.hamburger {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
+footer {
+    background-color: var(--background-color);
+    color: var(--font-color1);
     text-align: center;
     padding: 10px;
 }
 
-.hamburger.open + .navigation {
-    display: block;
+/* You can also use accent colors for specific elements */
+a {
+    color: var(--accent-color);
 }
 
-#temple-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 20px;
-    margin: 0 auto;
+a:hover {
+    color: var(--accent-color2);
+}
+
+/* Example usage of font colors and other variables */
+h1, h2, h3 {
+    color: var(--font-color1);
 }
 
 section {
-    background-color: white;
+    background-color: var(--main-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00CCCC;
+    box-shadow: 0 0 10px var(--accent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,18 +63,25 @@ img {
     border-radius: 5px;
 }
 
-label {
-    font-weight: bold;
-    color: #333333;
+/* For the hamburger menu and navigation */
+.navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
 }
 
-footer {
-    background-color: #4169E1;
-    color: black;
+.hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
     text-align: center;
     padding: 10px;
+    color: var(--font-color1);
 }
 
+/* Mobile styles for the hamburger menu */
 @media (min-width: 768px) {
     .navigation {
         flex-direction: row;
@@ -113,3 +119,4 @@ footer {
         font-size: 1.2rem;
     }
 }
+

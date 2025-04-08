@@ -234,12 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
             imageFolder: "images/temple-images/Yigo-Guam/yigo_guam_temple_2.jpg"
         }
     ];
-    // Function to create and display temple cards
+    
     function createTempleCard(filteredTemples) {
         const gallery = document.getElementById('temple-gallery');
-        gallery.innerHTML = ''; // Clear current cards
+        gallery.innerHTML = ''; 
 
-        // Create and display each temple card
+        
         filteredTemples.forEach(temple => {
             let card = document.createElement("section");
             let name = document.createElement("h3");
@@ -257,9 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
             img.setAttribute("alt", `${temple.templeName} Temple`);
             img.setAttribute("loading", "lazy");
             
-            // Constructing image path based on imageFolder and temple-specific image
+            
             img.onerror = () => {
-                // Default to temple-specific images from subfolder
+                
                 const localImagePath = `${temple.imageFolder}/${temple.templeName.toLowerCase().replace(/ /g, '-')}-main.jpg`;
                 img.setAttribute("src", localImagePath);
             };
