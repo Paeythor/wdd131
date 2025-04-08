@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 templeUrl: "https://churchofjesuschristtemples.org/laie-hawaii-temple/",
                 galleryURL: "https://churchofjesuschristtemples.org/laie-hawaii-temple/photographs/",
                 dedicatedYear: 1919,
-                imageFolder: ""
+                imageFolder: "images/temple-images/Laie-Hawaii/laie-hawaii-temple-7370-main.jpg"
             },
             {
                 templeName: "Lima Peru",
