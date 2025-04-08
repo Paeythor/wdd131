@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const year = document.querySelector("#currentyear");
     year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
-    const hamburgerBtn = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.hamburger');
     const navigation = document.querySelector('.navigation');
-    hamburgerBtn.addEventListener('click', () => {
+    hamburger.addEventListener('click', () => {
         navigation.classList.toggle('open'); 
     });
-    // Get the temple data
+    
     const temples = [
             {
                 templeName: "Aba Nigeria",
