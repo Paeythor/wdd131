@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Schumann">
+    <meta name="description" content="Beautiful temples">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="home">Home</h2>
+        <div class="container home">
+
+        <section class="temple-gallery">
+            
+            <figure>
+                <img src="images/temple-images/payson-utah-temple.jpg" alt="Payson Utah Temple">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/san-diego-california-temple.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-images/provo-city-center-temple.jpg" alt="Provo City Center Temple">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-images/mexico-city-mexico-temple.jpg" alt="Mexico City Mexico Temple">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/mexico-city-benemerito-mexico-temple.jpg" alt="Mexico City Benemerito Mexico Temple">
+                <figcaption>Mexico City Benemerito Mexico Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/oakland-california-temple.jpg" alt="Oakland California Temple">
+                <figcaption>Oakland California Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/provo-utah-rock-canyon-temple.jpg" alt="Provo Utah Rock Canyon Temple">
+                <figcaption>Provo Utah Rock Canyon Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/barcelona-spain-temple.jpg" alt="Barcelona Spain Temple">
+                <figcaption>Barcelona Spain Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/nauvoo-illinois-temple.jpg" alt="Nauvoo Illinois Temple">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/mount-timpanogos-utah-temple.jpg" alt="Mount Timpanogos Utah Temple">
+                <figcaption>Mount Timpanogos Utah Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/orem-utah-temple.jpg" alt="Orem Utah Temple">
+                <figcaption>Orem Utah Temple</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="images/temple-images/queretaro-mexico-temple.jpg" alt="Queretaro Mexico Temple">
+                <figcaption>Queretaro Mexico Temple</figcaption>
+            </figure>
+        </section>
+</div>
+</main>
+<footer>
+        <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span> - Jacob Schumann - USA
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript to handle hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            // Toggle the 'active' class on the navigation
+            navLinks.classList.toggle('active');
+        });
+
+        // Dynamically insert the current year and last modified date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

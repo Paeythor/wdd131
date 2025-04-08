@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+
+header {
+    background-color: #33006F;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #33006F;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+.hamburger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    display: none;
+}
+
+/* Temple Gallery Styles */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Mobile Specific - Hide Navigation links and show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .temple-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .temple-gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Large Screen Styles (Tablets and up) */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+        gap: 2em;
+    }
+
+    .temple-gallery img {
+        max-width: 100%;
+    }
+}

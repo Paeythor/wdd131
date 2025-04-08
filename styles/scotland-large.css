@@ -1,0 +1,55 @@
+/* For larger screens (scotland-large.css) */
+@media screen and (min-width: 800px) {
+    /* Ensure the hero container has relative positioning */
+    .hero {
+        position: relative; /* Set hero to be a reference point for absolute positioning */
+        max-width: 100%;
+        background-color: var(--blue-streak); /* Hero section with Scotland's blue */
+    }
+
+    /* Cards' base styles */
+    #card1, #card2 {
+        position: absolute; /* Positioning cards absolutely within the hero container */
+        width: 300px; /* Define width for the cards */
+        height: auto;
+        padding: 20px;
+        box-shadow: 0 4px 6px #0000001A; /* Add shadow to make cards stand out */
+        border-radius: 8px;
+        background-color: var(--card-bg-color); /* Light blue background for cards */
+    }
+
+    /* Positioning card1 in the top-left corner of the hero section */
+    #card1 {
+        top: 10px; /* 10px from the top */
+        left: 10px; /* 10px from the left */
+    }
+
+    /* Positioning card2 in the bottom-right corner of the hero section */
+    #card2 {
+        bottom: 10px; /* 10px from the bottom */
+        right: 10px; /* 10px from the right */
+    }
+
+    /* Ensuring that titles are shown */
+    .data-title-Scotland,
+    .data-title-weather {
+        display: block; /* Show titles on large screens */
+    }
+
+    /* Increase header size on larger screens */
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Increase font size for data boxes on large screens */
+    .data-box-1, .data-box-2 {
+        font-size: 1rem;
+        box-shadow: 0 2px 8px var(--transparent-black); /* Add shadow to data boxes */
+    }
+
+    /* Larger footer font-size */
+    footer {
+        font-size: 1.1em;
+    }
+}
+

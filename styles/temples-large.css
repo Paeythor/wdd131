@@ -1,0 +1,32 @@
+/* Large Screen Styles */
+@media (min-width: 768px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of elements */
+        gap: 2rem; /* Space between items */
+    }
+
+    /* Temple Gallery Styles */
+    .temple-gallery {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+        justify-content: space-between; /* Distribute items evenly */
+        gap: 2rem; /* Space between items */
+        width: 100%;
+    }
+
+    /* Flex settings for figures in temple-gallery */
+    .temple-gallery figure {
+        flex: 1 1 30%; /* Each figure takes up approximately 30% of the container's width */
+        text-align: center;
+    }
+
+    .temple-gallery img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for images */
+    }
+}

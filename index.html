@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jacob Schumann - HTML, CSS, JavaScript.">
+    <meta name="author" content="Jacob Schumann">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jacob Schumann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jacob-schumann-1b849470/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/courses/7888/" title="WDD131">WDD 131</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/22?lang=eng&id=p32,p70#p32" title="Scripture">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Left Column (About Me + Provo) -->
+        <div class="left-column">
+            <section class="card-1">
+                <h2 class="about-me-title">About Me</h2>
+                <div class="about-me-container">
+                    <div class="about-me-text">
+                        <p>
+                            My name is Jacob Schumann, and I am from Pleasant Hill, CA originally but now have lived just over half my life in Provo, Utah. I have always had a passion for technology, creative writing, and web development. I am currently pursuing coding, digital marketing, and computer programming, hoping to develop my own business and potentially skills for another job. In my free time, I play with my dogs and work on creative endeavors.
+                        </p>
+                    </div>
+                    <div class="about-me-image">
+                        <img src="images/jacob_photo.jpg" alt="Jacob Schumann">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-2">
+                <h2 class="provo-title">Provo, Utah</h2>
+                <div class="provo-container">
+                    <div class="provo-text">
+                        <p>
+                            Provo is a city in Utah, located about 45 minutes south of Salt Lake City. It is known for being the beautiful home of Brigham Young University and is surrounded by scenic mountains. Provo has a strong tech scene, making it an ideal location for those pursuing careers in technology and innovation.
+                        </p>
+                    </div>
+                    <div class="provo-image">
+                        <img src="images/ymountain.jpg" alt="Y Mountain">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column (Web Dev Resources) -->
+        <div class="right-column">
+            <section class="card-3">
+                <h2 class="web-dev-resources-title">Web Dev Resources</h2>
+                <div class="web-dev-resources-container">
+                    <ul>
+                        <li><a href="https://dev.to/">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/css/">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com/">Udemy</a></li>
+                        <li><a href="https://www.facebook.com/byu.pathway.2024/" title="Facebook Page">Facebook Page</a></li>
+                    </ul>
+                    <div class="web-dev-image-container">
+                        <img src="images/web-dev-resources-image.jpg" alt="Web Dev Resources">
+                    </div>   
+                </div>
+            </section>
+        </div>
+    </main>
+    <section id="weather" class="info-box">
+        <h2>Weather</h2>
+        <p><strong>Temperature:</strong> 7°C</p>
+        <p><strong>Conditions:</strong> Cloudy</p>
+        <p><strong>Wind:</strong> 15 km/h</p>
+        <p><strong>Wind Chill:</strong> 5°C</p>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear">2025</span> - Jacob Schumann - Provo, UT</p>
+        <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+    <script>
+        // Script to show the last modified date
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
+</body>
+</html>

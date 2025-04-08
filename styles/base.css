@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #003d3d; /* Darker blue background */
+    color: #C0C0C0; /* Silver text color */
+    padding: 0;
+    text-shadow: 3px 3px 5px black; /* Long shadow for body text */
+}
+
+/* Header Styles */
+header {
+    background-color: #00008B;
+    color: #C0C0C0; /* Silver text color */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for header */
+    text-shadow: 3px 3px 5px black; /* Long shadow for header text */
+}
+
+h1 {
+    margin: 0;
+    text-shadow: 3px 3px 5px black; /* Long shadow for h1 */
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #C0C0C0; /* Silver navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-shadow: 3px 3px 5px black; /* Long shadow for links */
+}
+
+nav a:hover {
+    color: #f4b400; /* Hover effect */
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3:1 column split */
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Card Styles (Common for all cards) */
+.card {
+    background-color: #003366; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    border: 3px solid black; /* Black border */
+    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+    margin-bottom: 2rem;
+}
+
+/* Card Images */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Card Text */
+.card p {
+    font-size: 1rem;
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #C0C0C0; /* Silver footer text */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow for footer */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* About Me Section Styles */
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark blue background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+.about-me-text {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 50%;
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
+}
+
+.about-me-image {
+    flex: 1;
+    max-width: 30%;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded image corners */
+}
+
+/* About Me Title Styles */
+.about-me-title {
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
+}
+
+/* Provo Section Title Styles */
+.provo-title {
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow */
+}
+
+/* Provo Section Layout */
+.provo-container {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center the content */
+    background-color: #003366; /* Dark blue background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the Provo section */
+}
+
+.provo-text {
+    flex: 1; /* Allow text to take up remaining space */
+    max-width: 50%; /* Set a max width to ensure the text doesn't stretch too wide */
+    color: #C0C0C0; /* Silver text */
+    text-shadow: 3px 3px 5px black; /* Long shadow for Provo text */
+}
+
+.provo-image {
+    flex: 1; /* Allow the image to take up equal space */
+    max-width: 40%; /* Limit the image width */
+}
+
+.provo-image img {
+    width: 100%; /* Ensure the image takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round corners of the image */
+}
+
+/* Web Dev Resources Title Styles */
+.web-dev-resources-title {
+    background-color: #000080; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-shadow: 3px 3px 5px black; /* Long shadow for the title */
+}
+
+/* Web Dev Resources Styles */
+.web-dev-resources-container {
+    background-color: #003366; /* Dark blue background */
+    color: #C0C0C0; /* Silver text */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin-bottom: 2rem;
+}
+
+.web-dev-resources-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.web-dev-resources-container li {
+    margin: 0.5rem 0;
+}
+
+.web-dev-resources-container a {
+    color: #C0C0C0; /* Silver links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 3px 3px 5px black; /* Long shadow for links */
+}
+
+.web-dev-resources-container a:hover {
+    color: #f4b400; /* Hover effect */
+}
+
+/* Web Dev Resources Card Positioning */
+.card-3 {
+    grid-column: 2; /* Places the Web Dev Resources card in the second column (right column) */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: space-between; /* Ensures space between header and content */
+    height: 100%; /* Ensures it takes up the full height of the grid cell */
+    min-height: 100%; /* Makes sure it stretches at least to the full height */
+}
+
+
+.web-dev-resources-container {
+    flex: 1;
+    background-color: #003366; 
+    color: #C0C0C0; 
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 2rem;
+}

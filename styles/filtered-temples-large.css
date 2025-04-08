@@ -1,0 +1,235 @@
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header Styles */
+header {
+    background-color: #00CCCC; /* Robin's Egg Blue */
+    color: #000080; /* Navy Blue */
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* Allow absolute positioning inside header */
+    overflow: hidden; /* Ensures the icon doesn't overflow the header */
+}
+
+/* Sun Icon - Fixed position to stay visible even while scrolling */
+.sun-icon {
+    position: fixed; /* Fix it in place */
+    font-size: 40px; /* Adjust size as needed */
+    color: #FFDD00; /* Sun Yellow */
+    top: 20px; /* Keep it 20px from the top of the screen */
+    left: 50%; /* Keep it centered horizontally */
+    transform: translateX(-50%); /* Correct the positioning so it’s truly centered */
+    animation: pulse 33s infinite, lightball-travel 33s linear infinite; /* Pulse and travel animations */
+    z-index: 10; /* Make sure the sun icon stays on top of other elements */
+}
+
+/* Pulse Animation (Enlarge and change color) */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Normal size */
+        color: white; /* Start with white */
+    }
+    25% {
+        transform: scale(1.2); /* Enlarge the link */
+        color: #FFD700; /* Change color to yellow */
+    }
+    50% {
+        transform: scale(1); /* Return to normal size */
+        color: #FFDD00; /* Polka dot color - sun yellow */
+    }
+    75% {
+        transform: scale(1.2); /* Enlarge again */
+        color: #000000; /* Change color to black */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+        color: white; /* Return to white */
+    }
+}
+
+/* Travel Animation - Move the Sun Icon Around the Header */
+@keyframes lightball-travel {
+    0% {
+        top: 0;
+        left: 50%;
+    }
+    25% {
+        top: 0;
+        left: 100%; /* Move to the right */
+    }
+    50% {
+        top: 100%;
+        left: 100%; /* Move to the bottom right */
+    }
+    75% {
+        top: 100%;
+        left: 0; /* Move to the bottom left */
+    }
+    100% {
+        top: 0;
+        left: 0; /* Return to the top left */
+    }
+}
+
+/* Set the text color of "Temple Album" to sky blue and make it pulse */
+header h1 {
+    color: #000080; /* Navy Blue */
+    animation: pulse 33s infinite; /* Pulse animation with 33s duration */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00CCCC; /* Robin's Egg Blue */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden; /* Ensures the ball doesn't go outside */
+}
+
+/* Glowing Text Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #00CCCC, 0 0 20px #00CCCC, 0 0 25px #00CCCC;
+    }
+    50% {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #00CCCC, 0 0 40px #00CCCC, 0 0 50px #00CCCC;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #00CCCC, 0 0 20px #00CCCC, 0 0 25px #00CCCC;
+    }
+}
+
+header h1, h2, footer p {
+    animation: glow 33s ease-in-out infinite; /* Animation duration, timing function, infinite loop */
+}
+
+/* Creating the Lightball Border Animation */
+@keyframes lightball-travel-border {
+    0% {
+        transform: translateX(-100%); /* Start from left side of the element */
+    }
+    50% {
+        transform: translateX(100%); /* Move to the right side */
+    }
+    100% {
+        transform: translateX(-100%); /* Move back to the left */
+    }
+}
+
+/* Create a glowing ball on the inner border of the header and footer */
+header::before, footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px; /* Size of the glowing ball */
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00CCCC; /* The lightball color */
+    box-shadow: 0 0 15px #00CCCC; /* Glow effect */
+    animation: lightball-travel-border 3s linear infinite; /* Animating the ball */
+}
+
+/* Positioning the lightball to move around the border */
+header::before {
+    top: 0;
+    left: 0;
+}
+
+footer::before {
+    top: 0;
+    left: 0;
+}
+
+/* Navigation Styles for Larger Screens */
+.navigation {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space out the links evenly */
+    align-items: center; /* Vertically center the items */
+    padding: 0 20px; /* Add some padding on the left and right */
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding to the links for better spacing */
+    font-size: 16px; /* Set the font size */
+    font-weight: bold; /* Make the font bold */
+    position: relative; /* Needed for animations */
+    transition: color 33s ease; /* Smooth transition for text color */
+    animation: pulse 33s infinite; /* Pulse animation with 33s duration */
+}
+
+/* Navigation links pulse effect */
+.navigation a:hover {
+    color: #000000; /* Change text color to black on hover */
+    background-color: #00B3B3; /* Slightly darker than Robin's Egg Blue */
+    border-radius: 5px; /* Optional: add border radius for a rounded effect */
+    animation: pulse 33s infinite; /* Keep the same pulse animation on hover */
+}
+
+/* Temple Gallery Styles for Larger Screens */
+#temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    gap: 20px;
+    padding: 30px;
+}
+
+/* General Temple Card Styles */
+section {
+    background-color: #F0EAD6; /* Eggshell White (unchanged) */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00CCCC; /* Robin's Egg Blue shadow without opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Temple Cards */
+section:hover {
+    transform: scale(1.4); /* Scale the card to 110% on hover for a bigger effect */
+    box-shadow: 0 4px 20px #00CCCC; /* Darker robin's egg blue shadow effect on hover */
+}
+
+/* Mobile-Specific Styles for Temple Gallery */
+@media (max-width: 767px) {
+    #temple-gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+        padding: 20px;
+    }
+}
+
+/* Media Query for Larger Screens (>=768px) */
+@media (min-width: 768px) {
+    #temple-gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+        gap: 30px;
+    }
+
+    section {
+        padding: 15px; /* Adjust padding for larger screens */
+    }
+
+    /* Heading for 'Explore Temples by Category' */
+    h2 {
+        color: #000080; /* Navy Blue */
+        animation: pulse 33s infinite; 
+        font-size: 1rem; /* Same font size as navigation links */
+        font-weight: bold; /* Same font weight as navigation links */
+        text-align: center; /* Center the heading for consistency */
+        color: white; /* Set text color to white or adjust based on your theme */
+        margin: 10px 0; /* Space it slightly from the header */
+        padding: 0 10px; /* Optional: Add padding for better spacing */
+    }
+}

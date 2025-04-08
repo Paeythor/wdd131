@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Schumann">
+    <meta name="description" content="WDD 131 - Filtered temples - Jacob Schumann">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">     
+    <!-- Local Font Awesome CSS -->
+    <link rel="stylesheet" href="font-awesome-master/css/all.min.css">    
+    <link rel="stylesheet" href="styles/filtered-temples-mobile.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <button id="menu" class="hamburger" aria-label="Open menu">&#9776;</button> 
+        <h1>Temple Album <i class="fas fa-sun sun-icon"></i></h1> 
+        
+        <nav class="navigation">
+            <a href="#" id="home" class="active">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Come unto Him</h2> 
+        <div id="temple-gallery" class="temple-gallery"></div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Jacob Schumann | Provo, UT</p>
+        <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
+

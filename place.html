@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Schumann"> 
+    <meta name="description" content="Explore the beautiful and fantastical land of Scotland, with its rich culture, stunning landscapes, and fascinating history."> <!-- Meta description -->
+    <title>Scotland</title>
+    <link rel="stylesheet" href="styles/scotland.css">
+    <link rel="stylesheet" href="styles/scotland-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+    
+    <script defer src="scripts/scotlandscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scotland</h1>
+    </header>
+    <div class="grid-container">
+        <main>
+            <div class="hero">
+                <!-- Responsive images with source sets -->
+                <picture>
+                    <source
+                        srcset="images/Scotland-large.webp 1500w"
+                        media="(min-width: 800px)" sizes="800px">
+                    <source
+                        srcset="images/Scotland-medium.webp 640w"
+                        media="(min-width: 100px)" sizes="600px">
+                    <source
+                        srcset="images/Scotland-small.webp 500w"
+                        media="(min-width: 500px)" sizes="500px">
+                    <img
+                        src="images/Scotland-large.webp"
+                        alt="Country name: Scotland"
+                        width="1500"
+                        height="584">
+                </picture>
+
+                <!-- Card for Data -->
+                <section id="card1">
+                    <h2 class="data-title-Scotland">
+                        Data <img src="images/Scotland-icon.svg" alt="Data about Scotland" width="24" height="24"></h2>
+                    <div class="data-box-1">
+                        <h3 id="title-header-data">Data</h3>
+                        <div class="row">
+                            <div class="col1">Area:</div>
+                            <div class="col2">78,789 km²</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Population:</div>
+                            <div class="col2">5,490,100</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Capital:</div>
+                            <div class="col2">Edinburgh</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Language:</div>
+                            <div class="col2">English, Scots, Scottish Gaelic, and British Sign Language</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Currency:</div>
+                            <div class="col2">Pound Sterling</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Time Zone:</div>
+                            <div class="col2">UTC+0</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Domain (TLD):</div>
+                            <div class="col2">.scot</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Country code:</div>
+                            <div class="col2">011 (US exit code) + 44</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card for Weather -->
+                <section id="card2">
+                    <h2 class="data-title-weather">Weather <img src="images/summer_sunshine_icon.svg" alt="Partly cloudy weather" width="32" height="32"></h2>
+                    <div class="data-box-2">
+                        <h3 id="title-header-weather">Weather</h3>
+                        <div class="row">
+                            <div class="col1">Temperature:</div>
+                            <div class="col2" id="temperature">7°C</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Weather Condition:</div>
+                            <div class="col2">Cloudy</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Wind Speed:</div>
+                            <div class="col2" id="wind-speed">7.5 km/h</div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">Wind Chill Factor:</div>
+                            <div class="col2" id="wind-chill"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span> Jacob Schumann | Provo, UT
+        </p>
+        <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+
