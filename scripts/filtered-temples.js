@@ -276,11 +276,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const lazyLoad = (image) => {
             const src = image.getAttribute('data-src');
-            if (src) {
-                image.setAttribute('src', src);
-                image.classList.remove('lazy');
+            if (src && !image.getAttribute('src')) {
+              image.setAttribute('src', src);
+              image.classList.remove('lazy');
             }
-        };
+          };
 
         const imageObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {

@@ -1,52 +1,48 @@
 :root {
-    --background-color: #4169E1;  /* Set your desired background color */
-    --emphasis-color: #FFD700;    /* Set an accent or emphasis color */
-    --main-color: #ffffff;        /* Set your main color */
-    --font-color1: #333333;       /* Set the primary font color */
-    --accent-color: #00CCCC;      /* Set an accent color */
-    --accent-color2: #FF6347;     /* Another accent color */
-    --font-one: 'Merriweather', serif;  /* Primary font */
-    --font-two: 'Arial', sans-serif;    /* Secondary font */
-    --font-three: 'Courier New', monospace; /* Third font */
-}
-
-/* Now you can use these variables throughout your CSS */
-
-body {
+    --background-color: #4169E1;
+    --emphasis-color: #FFD700;
+    --main-color: #ffffff;
+    --font-color1: #333333;
+    --accent-color: #00CCCC;
+    --accent-color2: #FF6347;
+    --font-one: 'Merriweather', serif;
+    --font-two: 'Arial', sans-serif;
+    --font-three: 'Courier New', monospace;
+  }
+  
+  body {
     font-family: var(--font-one);
     background-color: var(--background-color);
     color: var(--font-color1);
-}
-
-header {
+  }
+  
+  header {
     background-color: var(--background-color);
     color: var(--main-color);
     padding: 10px 0;
     text-align: center;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: var(--background-color);
     color: var(--font-color1);
     text-align: center;
     padding: 10px;
-}
-
-/* You can also use accent colors for specific elements */
-a {
+  }
+  
+  a {
     color: var(--accent-color);
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: var(--accent-color2);
-}
-
-/* Example usage of font colors and other variables */
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     color: var(--font-color1);
-}
-
-section {
+  }
+  
+  section {
     background-color: var(--main-color);
     padding: 20px;
     border-radius: 10px;
@@ -55,212 +51,72 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-img {
+  }
+  
+  img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-/* For the hamburger menu and navigation */
-.navigation {
+  }
+  
+  .navigation {
     display: none;
     flex-direction: column;
     align-items: center;
     padding: 0;
     list-style: none;
-}
-
-.hamburger {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    text-align: center;
-    padding: 10px;
-    color: var(--font-color1);
-}
-
-/* Mobile styles for the hamburger menu */
-@media (min-width: 768px) {
-    .navigation {
-        flex-direction: row;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    #temple-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        padding: 30px;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    header, footer {
-        padding: 15px 0;
-    }
-
-    label {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    section {
-        padding: 20px;
-    }
-
-    label {
-        font-size: 1.2rem;
-    }
-}
-
-:root {
-    --background-color: #4169E1;  /* Set your desired background color */
-    --emphasis-color: #FFD700;    /* Set an accent or emphasis color */
-    --main-color: #ffffff;        /* Set your main color */
-    --font-color1: #333333;       /* Set the primary font color */
-    --accent-color: #00CCCC;      /* Set an accent color */
-    --accent-color2: #FF6347;     /* Another accent color */
-    --font-one: 'Merriweather', serif;  /* Primary font */
-    --font-two: 'Arial', sans-serif;    /* Secondary font */
-    --font-three: 'Courier New', monospace; /* Third font */
-}
-
-/* Now you can use these variables throughout your CSS */
-
-body {
-    font-family: var(--font-one);
-    background-color: var(--background-color);
-    color: var(--font-color1);
-}
-
-header {
-    background-color: var(--background-color);
-    color: var(--main-color);
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer {
-    background-color: var(--background-color);
-    color: var(--font-color1);
-    text-align: center;
-    padding: 10px;
-}
-
-/* You can also use accent colors for specific elements */
-a {
-    color: var(--accent-color);
-}
-
-a:hover {
-    color: var(--accent-color2);
-}
-
-/* Example usage of font colors and other variables */
-h1, h2, h3 {
-    color: var(--font-color1);
-}
-
-section {
-    background-color: var(--main-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--accent-color);
+  }
+  
+  .navigation.open {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* For the hamburger menu and navigation */
-.navigation {
-    display: none;  /* Hide by default on small screens */
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    list-style: none;
-}
-
-.navigation.open {
-    display: flex;  /* Show when the 'open' class is added */
-}
-
-.hamburger {
+  }
+  
+  .hamburger {
     display: block;
     font-size: 30px;
     cursor: pointer;
     text-align: center;
     padding: 10px;
     color: var(--font-color1);
-}
-
-/* Mobile styles for the hamburger menu */
-@media (max-width: 767px) {  /* Changed to target mobile size */
+  }
+  
+  @media (min-width: 768px) {
     .hamburger {
-        display: block;  /* Show hamburger on small screens */
+      display: none;
     }
-
+    
     .navigation {
-        display: none;  /* Hide the navigation by default on small screens */
-        flex-direction: column;
-        gap: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
     }
-
-    .navigation.open {
-        display: flex;  /* Show when 'open' class is added to the navigation */
-    }
-}
-
-/* Styles for the navigation bar on medium and larger screens */
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;  /* Hide hamburger on larger screens */
-    }
-
-    .navigation {
-        display: flex;  /* Show the navigation bar by default */
-        flex-direction: row;
-        gap: 20px;  /* Space out the items */
-    }
-
+    
     #temple-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        padding: 30px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 30px;
     }
-
+    
     section {
-        padding: 15px;
+      padding: 15px;
     }
-
+    
     header, footer {
-        padding: 15px 0;
+      padding: 15px 0;
     }
-
+    
     label {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
-
-@media (min-width: 1024px) {
+  }
+  
+  @media (min-width: 1024px) {
     section {
-        padding: 20px;
+      padding: 20px;
     }
-
+    
     label {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-}
+  }
+  

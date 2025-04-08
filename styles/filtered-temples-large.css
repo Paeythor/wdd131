@@ -4,61 +4,60 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-header {
+  }
+  
+  header {
     background-color: #00CCCC;
     color: #000080;
     padding: 10px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     color: #000080;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #00CCCC;
     color: #000000;
     text-align: center;
     padding: 10px 0;
     position: relative;
     overflow: hidden;
-}
-
-.navigation {
+  }
+  
+  .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     list-style: none;
-}
-
-.navigation a {
+  }
+  
+  .navigation a {
     text-decoration: none;
     color: #000080;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     position: relative;
-}
-
-.navigation a:hover {
+  }
+  
+  .navigation a:hover {
     color: #000000;
     background-color: #00B3B3;
     border-radius: 5px;
-}
-
-#temple-gallery {
+  }
+  
+  #temple-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 30px;
-}
-
-section {
+  }
+  
+  section {
     background-color: #F0EAD6;
     padding: 20px;
     border-radius: 10px;
@@ -68,36 +67,52 @@ section {
     align-items: center;
     gap: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
+  }
+  
+  section:hover {
     transform: scale(1.4);
     box-shadow: 0 4px 20px #00CCCC;
-}
-
-@media (max-width: 767px) {
+  }
+  
+  @media (max-width: 767px) {
     #temple-gallery {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 20px;
     }
-}
-
-@media (min-width: 768px) {
+    
+    .navigation {
+      display: none;
+    }
+    
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 768px) {
     #temple-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
     }
-
+    
     section {
-        padding: 15px;
+      padding: 15px;
     }
-
+    
     h2 {
-        color: #000080;
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: center;
-        margin: 10px 0;
-        padding: 0 10px;
+      color: #000080;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+      padding: 0 10px;
     }
-}
+    
+    .navigation {
+      display: flex;
+    }
+    
+    .hamburger {
+      display: none;
+    }
+  }
