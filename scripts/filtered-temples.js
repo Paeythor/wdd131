@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hamburgerBtn = document.querySelector('.hamburger');
     const navigation = document.querySelector('.navigation');
-
+    hamburgerBtn.addEventListener('click', () => {
+        navigation.classList.toggle('open'); 
+    });
     // Get the temple data
     const temples = [
             {
