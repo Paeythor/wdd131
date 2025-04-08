@@ -3,24 +3,22 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #4169E1; /* Background color for the page */
+    background-color: #4169E1;
 }
 
-/* Header Styles */
 header {
-    background-color: #4169E1; /* Background color for the header */
-    color: white; /* Text color for header */
+    background-color: #4169E1;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
 
-/* Navigation Styles */
 .navigation {
     list-style: none;
     padding: 0;
     text-align: center;
-    display: flex; /* Flex display for mobile screens, but stack vertically */
-    flex-direction: column; /* Stack the navigation items */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -30,7 +28,7 @@ header {
 }
 
 .hamburger {
-    display: block; /* Show hamburger menu on mobile */
+    display: block;
     font-size: 30px;
     cursor: pointer;
     text-align: center;
@@ -38,23 +36,22 @@ header {
 }
 
 .hamburger.open + .navigation {
-    display: block; /* Show navigation when hamburger is clicked */
+    display: block;
 }
 
-/* Style for the temple gallery */
 #temple-gallery {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column for small screens */
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px;
-    margin: 0 auto; /* Center the gallery */
+    margin: 0 auto;
 }
 
 section {
-    background-color: white; /* White background for temple cards */
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00CCCC; /* Light blue shadow */
+    box-shadow: 0 0 10px #00CCCC;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,57 +66,50 @@ img {
 
 label {
     font-weight: bold;
-    color: #333333; /* Dark color for labels */
+    color: #333333;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #4169E1; /* Footer background color */
-    color: black; /* Footer text color */
+    background-color: #4169E1;
+    color: black;
     text-align: center;
     padding: 10px;
 }
 
-/* Media Query for larger screens (>= 768px) */
 @media (min-width: 768px) {
     .navigation {
-        flex-direction: row; /* Display navigation items in a row */
+        flex-direction: row;
     }
 
     .hamburger {
-        display: none; /* Hide hamburger menu on larger screens */
+        display: none;
     }
 
-    /* Temple gallery: switch to 4 columns on larger screens */
     #temple-gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         padding: 30px;
     }
 
-    /* Adjust the padding for temple cards on larger screens */
     section {
-        padding: 15px; /* Adjust padding for larger screens */
+        padding: 15px;
     }
 
-    /* Header and Footer Padding Adjustments for Larger Screens */
     header, footer {
-        padding: 15px 0; /* Increase padding for better visual balance */
+        padding: 15px 0;
     }
 
-    /* Adjust label size for larger screens */
     label {
         font-size: 1rem;
     }
 }
 
-/* Optional: You can add additional styles for even larger screens (>= 1024px) if needed */
 @media (min-width: 1024px) {
     section {
-        padding: 20px; /* Larger padding for bigger screens */
+        padding: 20px;
     }
 
     label {
-        font-size: 1.2rem; /* Larger font size for better readability */
+        font-size: 1.2rem;
     }
 }

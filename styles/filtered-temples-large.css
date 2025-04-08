@@ -3,59 +3,53 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4;
 }
 
-/* Header Styles */
 header {
-    background-color: #00CCCC; /* Robin's Egg Blue */
-    color: #000080; /* Navy Blue */
+    background-color: #00CCCC;
+    color: #000080;
     padding: 10px 0;
     text-align: center;
-    position: relative; /* Allow absolute positioning inside header */
-    overflow: hidden; /* Ensures the icon doesn't overflow the header */
+    position: relative;
+    overflow: hidden;
 }
 
-/* Sun Icon - Fixed position to stay visible even while scrolling */
 .sun-icon {
-    position: fixed; /* Fix it in place */
-    font-size: 40px; /* Adjust size as needed */
-    color: #FFDD00; /* Sun Yellow */
-    top: 20px; /* Keep it 20px from the top of the screen */
-    left: 50%; /* Keep it centered horizontally */
-    transform: translateX(-50%); /* Correct the positioning so it’s truly centered */
-    z-index: 10; /* Make sure the sun icon stays on top of other elements */
+    position: fixed;
+    font-size: 40px;
+    color: #FFDD00;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
-/* Set the text color of "Temple Album" to sky blue */
 header h1 {
-    color: #000080; /* Navy Blue */
+    color: #000080;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #00CCCC; /* Robin's Egg Blue */
-    color: #FFFFFF; /* White */
+    background-color: #00CCCC;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     position: relative;
-    overflow: hidden; /* Ensures the ball doesn't go outside */
+    overflow: hidden;
 }
 
-/* Create a glowing ball on the inner border of the header and footer */
 header::before, footer::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px; /* Size of the glowing ball */
+    width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #00CCCC; /* The lightball color */
-    box-shadow: 0 0 15px #00CCCC; /* Glow effect */
+    background-color: #00CCCC;
+    box-shadow: 0 0 15px #00CCCC;
 }
 
-/* Positioning the lightball to move around the border */
 header::before {
     top: 0;
     left: 0;
@@ -66,84 +60,76 @@ footer::before {
     left: 0;
 }
 
-/* Navigation Styles for Larger Screens */
 .navigation {
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: space-between; /* Space out the links evenly */
-    align-items: center; /* Vertically center the items */
-    padding: 0 20px; /* Add some padding on the left and right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
     list-style: none;
 }
 
 .navigation a {
     text-decoration: none;
-    color: white; /* White text color */
-    padding: 10px 20px; /* Add padding to the links for better spacing */
-    font-size: 16px; /* Set the font size */
-    font-weight: bold; /* Make the font bold */
-    position: relative; /* Needed for animations */
+    color: #000080;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
 }
 
-/* Navigation links hover effect */
 .navigation a:hover {
-    color: #000000; /* Change text color to black on hover */
-    background-color: #00B3B3; /* Slightly darker than Robin's Egg Blue */
-    border-radius: 5px; /* Optional: add border radius for a rounded effect */
+    color: #000000;
+    background-color: #00B3B3;
+    border-radius: 5px;
 }
 
-/* Temple Gallery Styles for Larger Screens */
 #temple-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 30px;
 }
 
-/* General Temple Card Styles */
 section {
-    background-color: #F0EAD6; /* Eggshell White (unchanged) */
+    background-color: #F0EAD6;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px #00CCCC; /* Robin's Egg Blue shadow without opacity */
+    box-shadow: 0 0 15px #00CCCC;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect for Temple Cards */
 section:hover {
-    transform: scale(1.4); /* Scale the card to 110% on hover for a bigger effect */
-    box-shadow: 0 4px 20px #00CCCC; /* Darker robin's egg blue shadow effect on hover */
+    transform: scale(1.4);
+    box-shadow: 0 4px 20px #00CCCC;
 }
 
-/* Mobile-Specific Styles for Temple Gallery */
 @media (max-width: 767px) {
     #temple-gallery {
-        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+        grid-template-columns: repeat(1, 1fr);
         padding: 20px;
     }
 }
 
-/* Media Query for Larger Screens (>=768px) */
 @media (min-width: 768px) {
     #temple-gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
 
     section {
-        padding: 15px; /* Adjust padding for larger screens */
+        padding: 15px;
     }
 
-    /* Heading for 'Explore Temples by Category' */
     h2 {
-        color: white; /* Corrected: Keep text color white */
-        font-size: 1rem; /* Same font size as navigation links */
-        font-weight: bold; /* Same font weight as navigation links */
-        text-align: center; /* Center the heading for consistency */
-        margin: 10px 0; /* Space it slightly from the header */
-        padding: 0 10px; /* Optional: Add padding for better spacing */
+        color: #000080;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+        padding: 0 10px;
     }
 }
