@@ -15,16 +15,6 @@ header {
     overflow: hidden;
 }
 
-.sun-icon {
-    position: fixed;
-    font-size: 40px;
-    color: #FFDD00;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
 header h1 {
     color: #000080;
 }
@@ -36,28 +26,6 @@ footer {
     padding: 10px 0;
     position: relative;
     overflow: hidden;
-}
-
-header::before, footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #00CCCC;
-    box-shadow: 0 0 15px #00CCCC;
-}
-
-header::before {
-    top: 0;
-    left: 0;
-}
-
-footer::before {
-    top: 0;
-    left: 0;
 }
 
 .navigation {
