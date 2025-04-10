@@ -68,7 +68,7 @@ a:visited {
 }
 
 a:hover {
-    color: purple !important; /* Add !important to override any conflicting styles */
+    color: purple !important; 
 }
 
 a:active {
@@ -79,9 +79,9 @@ a:focus {
     outline: 2px solid #ff9900;
 }
 
-/* Adding a pseudo-element to style the marker in an ordered list */
+
 ol li::marker {
-    content: "✔";  /* Add checkmark as the list marker */
-    color: navy;   /* Set marker color to navy */
-    font-size: 2rem;  /* Set marker font size */
+    content: "✔";  
+    color: navy;   
+    font-size: 2rem; 
 }
