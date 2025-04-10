@@ -30,7 +30,7 @@ form {
 }
 
 form span {
-    color: #FFF; /* Added the colon for the color property */
+    color: #FFF; 
     font-style: italic;
     font-size: 1rem;
 }    
