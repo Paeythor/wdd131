@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Jacob Schumann">
-  <meta name="description" content="WDD 131 - Filtered temples - Jacob C. Schumann">
+  <meta name="description" content="Review Confirmation for WDD 131 Product Review Assignment by Jacob Schumann.">
   <title>Review Confirmation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +18,26 @@
 
   <main>
     <p>Your review has been successfully submitted.</p>
-
     <p>Reviews Submitted: <span id="review-counter">0</span></p>
   </main>
 
   <footer>
     <p>©<span id="currentyear"></span> Jacob Schumann | Provo, UT</p>
     <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
-</footer>
+  </footer>
 
   <script>
-    window.onload = function() {
-      let reviewCount = localStorage.getItem("reviewCount") || 0;
+    function updateReviewCounter() {
+      let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
       reviewCount++;
       localStorage.setItem("reviewCount", reviewCount);
       document.getElementById("review-counter").textContent = reviewCount;
+    }
+
+    window.onload = function () {
+      updateReviewCounter();
+      document.getElementById("currentyear").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent = document.lastModified;
     };
   </script>
 </body>
