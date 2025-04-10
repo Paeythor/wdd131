@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Loading Images</title>
-    <link rel="stylesheet" href="styles/lazyload.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading Images</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
 </head>
 <body>
-    <main>
-        <h1>Lazy Loading Images</h1>
-
-        <img src="https://en.wikipedia.org/wiki/File:WoT01_TheEyeOfTheWorld.jpg/400x600" alt="Eye of the World" loading="lazy" class="lazy-img">
-        <img src="https://en.wikipedia.org/wiki/File:WoT02_TheGreatHunt.jpg/400x600" alt="The Great Hunt" loading="lazy" class="lazy-img">
-        <img src="https://en.wikipedia.org/wiki/File:WoT03_TheDragonReborn.jpg/400x600" alt="The Dragon Reborn" loading="lazy" class="lazy-img">
-        <img src="https://via.placeholder.com/400x600" alt="Image 4" loading="lazy" class="lazy-img">
-        <img src="https://via.placeholder.com/400x600" alt="Image 5" loading="lazy" class="lazy-img">
-        <img src="https://via.placeholder.com/400x600" alt="Image 6" loading="lazy" class="lazy-img">
-
-    </main>
-    <footer>
-        <p>Last updated: <span id="last-modified"></span></p>
-    </footer>
-    <script src="scripts/lazyload.js"></script>
+  <main>
+    <h1>Lazy Loading Images</h1>
+    <img data-src="https://upload.wikimedia.org/wikipedia/en/4/49/TheEyeOfTheWorld.jpg" alt="Eye of the World" class="lazy-img">
+    <img data-src="https://upload.wikimedia.org/wikipedia/en/5/5e/TheGreatHunt.jpg" alt="The Great Hunt" class="lazy-img">
+    <img data-src="https://upload.wikimedia.org/wikipedia/en/7/79/TheDragonReborn.jpg" alt="The Dragon Reborn" class="lazy-img">
+    <img data-src="https://via.placeholder.com/400x600" alt="Image 4" class="lazy-img">
+    <img data-src="https://via.placeholder.com/400x600" alt="Image 5" class="lazy-img">
+    <img data-src="https://via.placeholder.com/400x600" alt="Image 6" class="lazy-img">
+  </main>
+  <footer>
+    <p>Last updated: <span id="last-modified"></span></p>
+  </footer>
+  <script src="scripts/lazyload.js"></script>
 </body>
 </html>
