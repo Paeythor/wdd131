@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jacob Schumann">
+  <meta name="description" content="WDD 131 - Filtered temples - Jacob C. Schumann">
   <title>Review Confirmation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
@@ -18,8 +23,9 @@
   </main>
 
   <footer>
-    <p>© 2025 Product Reviews</p>
-  </footer>
+    <p>©<span id="currentyear"></span> Jacob Schumann | Provo, UT</p>
+    <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
+</footer>
 
   <script>
     window.onload = function() {
