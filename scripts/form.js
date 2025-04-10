@@ -27,7 +27,6 @@ const products = [
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Populate product dropdown
   const selectElement = document.getElementById("productName");
   if (selectElement) {
     products.forEach(product => {
@@ -38,7 +37,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Footer updates
   const yearSpan = document.getElementById("currentyear");
   const lastModifiedSpan = document.getElementById("lastModified");
 
@@ -49,9 +47,10 @@ window.addEventListener("DOMContentLoaded", () => {
   if (lastModifiedSpan) {
     lastModifiedSpan.textContent = document.lastModified;
   }
+
+  updateReviewCounter();
 });
 
-// LocalStorage Review Counter (used on review.html)
 function updateReviewCounter() {
   let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
   reviewCount++;
