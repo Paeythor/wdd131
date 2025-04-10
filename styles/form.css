@@ -1,11 +1,11 @@
 :root {
-    --text-light: #FFFFFF;
-    --text-accent: #FFFF00;
+    --text-light: #F0F0F0;
+    --text-accent: #FFD700;
     --bg-dark: #002b2b;
-    --highlight: #33CC33;
-    --hover: #800080;
-    --header-bg: #0000CC;
-    --footer-bg: #444444;
+    --highlight: #228B22;
+    --hover: #66BB6A;
+    --header-bg: #00008B;
+    --footer-bg: #333333;
     --text-shadow: 3px 3px 5px #000000;
     --box-shadow: 0px 4px 8px #000000;
 }
@@ -20,13 +20,13 @@ body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
     background-color: var(--bg-dark);
-    color: #86a17d;
+    color: var(--text-dark);
     padding: 0;
     text-shadow: var(--text-shadow);
 }
 
 header {
-    background-color: #444444;
+    background-color: var(--header-bg);
     color: var(--text-light);
     padding: 1rem;
     text-align: center;
@@ -60,7 +60,6 @@ nav a {
 nav a:hover {
     color: var(--text-accent);
 }
-
 span {
     text-indent: 20px;
     text-align: center;
@@ -123,7 +122,7 @@ form input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #444444;
+    background-color: var(--footer-bg);
     color: var(--text-light);
     padding: 1rem;
     text-align: center;
