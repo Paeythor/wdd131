@@ -4,7 +4,7 @@ form {
     border-radius: 8px;
     max-width: 500px;
     margin: auto;
-    box-shadow: 0 4px 12px #0000001a;
+    box-shadow: 0 4px 12px #000000;
     border: 1px solid #1c6c1b;
 }
 
@@ -39,33 +39,57 @@ input:focus, select:focus, textarea:focus {
     margin-bottom: 20px;
 }
 
-.star-rating {
-    text-align: center;
+.star-number-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-input[type="radio"] {
+.star-number-wrapper input {
     display: none;
 }
 
-input[type="radio"] + label {
-    font-size: 30px;
+.star-number-wrapper label {
+    font-size: 24px;
     cursor: pointer;
-    color: #d3d3d3;
-    transition: color 0.3s ease;
-    margin-right: 8px;
 }
 
-input[type="radio"]:checked + label,
-input[type="radio"]:hover + label {
+.pip-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.pip {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin: 0 2px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.star-number-wrapper input:checked + label + .pips .pip {
+    background-color: #000000;
+}
+
+.star-number-wrapper input:checked + label + .pips .pip:hover {
+    background-color: #000000;
+}
+
+.star-number-wrapper label:hover,
+.star-number-wrapper label:focus {
+    color: #66bb6a;
+}
+
+.star-number-wrapper input:checked + label {
     color: #ffcc00;
+    text-shadow: 0px 0px 8px rgba(255, 204, 0, 0.7);
 }
 
-input[type="radio"]:checked + label ~ label {
-    color: #ffcc00;
-}
-
-input[type="radio"]:not(:checked) + label {
-    color: #d3d3d3;
+.star-number-wrapper input:checked + label + .rating-cell {
+    background-color: #ffcc00;
 }
 
 .dots-container {
@@ -105,7 +129,7 @@ input[type="radio"]:not(:checked) + label {
 
 input[type="submit"] {
     background-color: #4b8e4c;
-    color: white;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -124,7 +148,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 30px;
-    color: #333;
+    color: #333333;
 }
 
 footer p {
