@@ -1,16 +1,14 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
 
-
 header {
     background-color: #702963;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
@@ -19,24 +17,23 @@ h1 {
     margin: 0;
 }
 
-
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
 article {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #000000;
 }
 
 .callout {
     background-color: #702963;
-    color: white;
+    color: #ffffff;
     padding: 20px;
     border-radius: 8px;
 }
@@ -46,29 +43,25 @@ article {
     font-size: 1.5em;
 }
 
-
 .callout {
     padding: 20px;
 }
 
-
 h2 {
     grid-column: span 2;
-    text-align: left; 
+    text-align: left;
 }
-
 
 .banner {
     background-color: #702963;
-    color: white;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
 }
 
-
 footer {
     text-align: left;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #333333;
+    color: #ffffff;
 }
