@@ -1,3 +1,15 @@
+:root {
+    --text-light: #FFFFFF;
+    --text-accent: #FFFF00;
+    --bg-dark: #002b2b;
+    --highlight: #33CC33;
+    --hover: #800080;
+    --header-bg: #0000CC;
+    --footer-bg: #444444;
+    --text-shadow: 3px 3px 5px #000000;
+    --box-shadow: 0px 4px 8px #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +19,24 @@
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
-    background-color: #003d3d;
-    color: #C0C0C0;
+    background-color: var(--bg-dark);
+    color: #86a17d;
     padding: 0;
-    text-shadow: 3px 3px 5px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 header {
-    background-color: #00008B;
-    color: #C0C0C0;
+    background-color: #444444;
+    color: var(--text-light);
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 8px #000000;
-    text-shadow: 3px 3px 5px #000000;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
 }
 
 h1 {
     margin: 0;
-    text-shadow: 3px 3px 5px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 nav ul {
@@ -38,18 +50,16 @@ nav li {
 }
 
 nav a {
-    color: #C0C0C0;
+    color: var(--text-light);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    text-shadow: 3px 3px 5px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 nav a:hover {
-    color: #f4b400;
+    color: var(--text-accent);
 }
-
-
 
 span {
     text-indent: 20px;
@@ -68,21 +78,23 @@ span {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
+    max-width: 550px;
+    margin: 5rem auto;
     padding: 2rem;
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+    width: 150%;
 }
 
 form {
-    background-color: #228B22;
+    background-color: var(--highlight);
     padding: 1vw;
     border-radius: 25px;
 }
 
 form span {
-    color: #FFF;
+    color: #C0C0C0;
     font-style: italic;
     font-size: 1rem;
 }
@@ -90,7 +102,7 @@ form span {
 form div {
     margin: 10px;
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
 }
 
 form textarea {
@@ -107,20 +119,22 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #66BB6A;
+    background-color: var(--hover);
 }
+
 footer {
-    background-color: #333333;
-    color: #C0C0C0;
+    background-color: #444444;
+    color: var(--text-light);
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 8px #000000;
-    text-shadow: 3px 3px 5px #000000;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
 }
 
 footer p {
     margin: 0.5rem 0;
 }
+
 .form-center-wrapper {
     display: flex;
     justify-content: center;
