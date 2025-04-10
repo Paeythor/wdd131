@@ -1,0 +1,87 @@
+:root {
+    --bord: 1px solid #777;  /* Define border variable */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    margin: 0;
+    border: var(--bord);
+    padding: 0.5rem;
+    width: 760px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.datatable {
+    width: 100%;
+    max-width: 760px;
+    margin-top: 2rem;
+    border: var(--bord);  /* Apply border to the datatable */
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.col {
+    border-top: var(--bord);
+    border-left: var(--bord);
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 8px;
+    box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col:nth-child(even) {
+    border-right: var(--bord);
+}
+
+.row:last-child {
+    border-bottom: var(--bord);
+    background-color: #bbb;
+}
+
+a:link,
+a:visited {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple !important; /* Add !important to override any conflicting styles */
+}
+
+a:active {
+    color: navy;
+}
+
+a:focus {
+    outline: 2px solid #ff9900;
+}
+
+/* Adding a pseudo-element to style the marker in an ordered list */
+ol li::marker {
+    content: "✔";  /* Add checkmark as the list marker */
+    color: navy;   /* Set marker color to navy */
+    font-size: 2rem;  /* Set marker font size */
+}
