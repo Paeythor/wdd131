@@ -38,13 +38,6 @@ h1 {
     margin: 0;
     text-shadow: var(--text-shadow);
 }
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    
-}
-
 nav li {
     margin: 0 1rem;
 }
