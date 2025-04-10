@@ -1,5 +1,5 @@
 :root {
-    --bord: 1px solid #777;  /* Define border variable */
+    --bord: 1px solid #777;  
 }
 
 * {
@@ -31,7 +31,7 @@ main {
     width: 100%;
     max-width: 760px;
     margin-top: 2rem;
-    border: var(--bord);  /* Apply border to the datatable */
+    border: var(--bord);  
 }
 
 .row {
