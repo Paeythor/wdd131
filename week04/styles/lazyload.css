@@ -1,4 +1,3 @@
-/* General styling for the body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -7,14 +6,12 @@ body {
     text-align: center;
 }
 
-/* Styling for the main content */
 main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Styling for each image */
 .lazy-img {
     width: 400px;
     height: 600px;
@@ -24,7 +21,6 @@ main {
     animation: fadeIn 2s forwards;
 }
 
-/* Animation for fade-in effect */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -36,7 +32,6 @@ main {
     }
 }
 
-/* Footer styling */
 footer {
     padding: 10px;
     background-color: #333;
