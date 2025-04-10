@@ -1,36 +1,32 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
-    background-color: #003d3d; /* Darker blue background */
-    color: #C0C0C0; /* Silver text color */
+    background-color: #003d3d;
+    color: #C0C0C0;
     padding: 0;
-    text-shadow: 3px 3px 5px black; /* Long shadow for body text */
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Header Styles */
 header {
     background-color: #00008B;
-    color: #C0C0C0; /* Silver text color */
+    color: #C0C0C0;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for header */
-    text-shadow: 3px 3px 5px black; /* Long shadow for header text */
+    box-shadow: 0px 4px 8px #000000;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 h1 {
     margin: 0;
-    text-shadow: 3px 3px 5px black; /* Long shadow for h1 */
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -42,79 +38,73 @@ nav li {
 }
 
 nav a {
-    color: #C0C0C0; /* Silver navigation links */
+    color: #C0C0C0;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    text-shadow: 3px 3px 5px black; /* Long shadow for links */
+    text-shadow: 3px 3px 5px #000000;
 }
 
 nav a:hover {
-    color: #f4b400; /* Hover effect */
+    color: #f4b400;
 }
 
-/* Main Content Layout */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: 3fr 1fr; /* 3:1 column split */
+    grid-template-columns: 3fr 1fr;
     gap: 2rem;
     width: 100%;
 }
 
-/* Card Styles (Common for all cards) */
 .card {
-    background-color: #003366; /* Dark blue background */
-    color: #C0C0C0; /* Silver text */
+    background-color: #003366;
+    color: #C0C0C0;
     padding: 1rem;
     text-align: center;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    border: 3px solid black; /* Black border */
-    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px #000000;
+    border: 3px solid #000000;
+    text-shadow: 3px 3px 5px #000000;
     margin-bottom: 2rem;
 }
 
-/* Card Images */
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px;
 }
 
-/* Card Text */
 .card p {
     font-size: 1rem;
-    color: #C0C0C0; /* Silver text */
-    text-shadow: 3px 3px 5px black; /* Long shadow for text */
+    color: #C0C0C0;
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #C0C0C0; /* Silver footer text */
+    background-color: #333333;
+    color: #C0C0C0;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    text-shadow: 3px 3px 5px black; /* Long shadow for footer */
+    box-shadow: 0px 4px 8px #000000;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 footer p {
     margin: 0.5rem 0;
 }
 
-/* About Me Section Styles */
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #003366; /* Dark blue background */
+    background-color: #003366;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0px 4px 8px #E0E0E0;
     margin-bottom: 20px;
 }
 
@@ -122,8 +112,8 @@ footer p {
     flex: 1;
     margin-right: 20px;
     max-width: 50%;
-    color: #C0C0C0; /* Silver text */
-    text-shadow: 3px 3px 5px black; /* Long shadow */
+    color: #C0C0C0;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .about-me-image {
@@ -134,86 +124,81 @@ footer p {
 .about-me-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Rounded image corners */
+    border-radius: 10px;
 }
 
-/* About Me Title Styles */
 .about-me-title {
-    background-color: #000080; /* Dark blue background */
-    color: #C0C0C0; /* Silver text */
+    background-color: #000080;
+    color: #C0C0C0;
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    text-shadow: 3px 3px 5px black; /* Long shadow */
+    box-shadow: 0px 4px 8px #000000;
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Provo Section Title Styles */
 .provo-title {
-    background-color: #000080; /* Dark blue background */
-    color: #C0C0C0; /* Silver text */
+    background-color: #000080;
+    color: #C0C0C0;
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    text-shadow: 3px 3px 5px black; /* Long shadow */
+    box-shadow: 0px 4px 8px #000000;
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Provo Section Layout */
 .provo-container {
-    display: flex; /* Align items horizontally */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically center the content */
-    background-color: #003366; /* Dark blue background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 20px; /* Space below the Provo section */
+    box-shadow: 0px 4px 8px #E0E0E0;
+    margin-bottom: 20px;
 }
 
 .provo-text {
-    flex: 1; /* Allow text to take up remaining space */
-    max-width: 50%; /* Set a max width to ensure the text doesn't stretch too wide */
-    color: #C0C0C0; /* Silver text */
-    text-shadow: 3px 3px 5px black; /* Long shadow for Provo text */
+    flex: 1;
+    max-width: 50%;
+    color: #C0C0C0;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .provo-image {
-    flex: 1; /* Allow the image to take up equal space */
-    max-width: 40%; /* Limit the image width */
+    flex: 1;
+    max-width: 40%;
 }
 
 .provo-image img {
-    width: 100%; /* Ensure the image takes up full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Round corners of the image */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Web Dev Resources Title Styles */
 .web-dev-resources-title {
-    background-color: #000080; /* Dark blue background */
-    color: #C0C0C0; /* Silver text */
+    background-color: #000080;
+    color: #C0C0C0;
     padding: 10px;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    text-shadow: 3px 3px 5px black; /* Long shadow for the title */
+    box-shadow: 0px 4px 8px #000000;
+    text-shadow: 3px 3px 5px #000000;
 }
 
-/* Web Dev Resources Styles */
 .web-dev-resources-container {
-    background-color: #003366; /* Dark blue background */
-    color: #C0C0C0; /* Silver text */
+    background-color: #003366;
+    color: #C0C0C0;
     padding: 1rem;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    box-shadow: 0px 4px 8px #E0E0E0;
     margin-bottom: 2rem;
 }
 
@@ -227,34 +212,32 @@ footer p {
 }
 
 .web-dev-resources-container a {
-    color: #C0C0C0; /* Silver links */
+    color: #C0C0C0;
     text-decoration: none;
     transition: color 0.3s ease;
-    text-shadow: 3px 3px 5px black; /* Long shadow for links */
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .web-dev-resources-container a:hover {
-    color: #f4b400; /* Hover effect */
+    color: #f4b400;
 }
 
-/* Web Dev Resources Card Positioning */
 .card-3 {
-    grid-column: 2; /* Places the Web Dev Resources card in the second column (right column) */
+    grid-column: 2;
     display: flex;
-    flex-direction: column; /* Stacks content vertically */
-    justify-content: space-between; /* Ensures space between header and content */
-    height: 100%; /* Ensures it takes up the full height of the grid cell */
-    min-height: 100%; /* Makes sure it stretches at least to the full height */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100%;
 }
-
 
 .web-dev-resources-container {
     flex: 1;
-    background-color: #003366; 
-    color: #C0C0C0; 
+    background-color: #003366;
+    color: #C0C0C0;
     padding: 1rem;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 4px 8px #E0E0E0;
     margin-bottom: 2rem;
 }

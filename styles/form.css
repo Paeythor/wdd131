@@ -1,156 +1,59 @@
-form {
-    background-color: #228b22;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0 4px 12px #000000;
-    border: 1px solid #1c6c1b;
-}
-
-label {
-    display: block;
-    margin: 8px 0 4px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 4px 0 12px;
-    border-radius: 4px;
-    border: 1px solid #4b8e4c;
-    background-color: #ffffff;
-    font-size: 1rem;
-    color: #333333;
-}
-
-input:focus, select:focus, textarea:focus {
-    border-color: #66bb6a;
-    outline: none;
-    box-shadow: 0 0 3px #66bb6a;
-}
-
-.rating-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.star-number-wrapper {
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.star-number-wrapper input {
-    display: none;
+span {
+    text-indent: 20px;
+    text-align: center;
 }
 
-.star-number-wrapper label {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.pip-container {
+.confirmation {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5px;
 }
 
-.pip {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #d3d3d3;
-    margin: 0 2px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+.confirmation table {
+    padding: 1vw;
+    margin-left: 20vw;
 }
 
-.star-number-wrapper input:checked + label + .pips .pip {
-    background-color: #000000;
-}
-
-.star-number-wrapper input:checked + label + .pips .pip:hover {
-    background-color: #000000;
-}
-
-.star-number-wrapper label:hover,
-.star-number-wrapper label:focus {
-    color: #66bb6a;
-}
-
-.star-number-wrapper input:checked + label {
-    color: #ffcc00;
-    text-shadow: 0px 0px 8px rgba(255, 204, 0, 0.7);
-}
-
-.star-number-wrapper input:checked + label + .rating-cell {
-    background-color: #ffcc00;
-}
-
-.dots-container {
+main {
     display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-    padding: 0 8px;
 }
 
-.dots-container .dot-number {
-    font-size: 14px;
-    color: #d3d3d3;
-    text-align: center;
-    flex: 1;
+form {
+    background-color: #228B22;
+    padding: 1vw;
+    border-radius: 25px;
 }
 
-.checkbox-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-}
-
-.checkbox-container input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.checkbox-container label {
-    color: #ffffff;
-    font-weight: normal;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-
-.checkbox-container div {
-    margin-bottom: 12px;
-}
-
-input[type="submit"] {
-    background-color: #4b8e4c;
-    color: #ffffff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
+form span {
+    color: #FFF; /* Added the colon for the color property */
+    font-style: italic;
     font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+}    
+
+form div {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #000;
 }
 
-input[type="submit"]:hover {
-    background-color: #66bb6a;
+form textarea {
+    width: 90%;
+    min-height: 150px;
+    overflow-y: hidden;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 30px;
-    color: #333333;
+form input[type="submit"] {
+    width: 90%;
 }
 
-footer p {
-    margin: 5px 0;
+form input[type="submit"]:hover {
+    background-color: #66BB6A;
 }
