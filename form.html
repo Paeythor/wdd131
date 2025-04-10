@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Schumann">
-    <meta name="description" content="WDD 131 - Filtered temples - Jacob C. Schumann">
+    <meta name="description" content="Submit a product review including ratings, features, and comments. WDD 131 Product Review Form by Jacob Schumann.">
     <title>Product Review Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
+
+    <h1>Product Review Form</h1>
+
     <form action="review.html" method="get">
         <label for="productName">Product Name:</label>
         <select id="productName" name="productName" required>
@@ -40,6 +43,10 @@
         <label for="feature1">Feature 1</label>
         <input type="checkbox" id="feature2" name="features" value="Feature2">
         <label for="feature2">Feature 2</label>
+        <input type="checkbox" id="feature3" name="features" value="Feature3">
+        <label for="feature3">Feature 3</label>
+        <input type="checkbox" id="feature4" name="features" value="Feature4">
+        <label for="feature4">Feature 4</label>
 
         <label for="review">Written Review:</label>
         <textarea id="review" name="review"></textarea>
@@ -54,6 +61,7 @@
         <p>©<span id="currentyear"></span> Jacob Schumann | Provo, UT</p>
         <p class="lastmodified">Last Modified: <span id="lastModified"></span></p>
     </footer>
+
     <script src="scripts/form.js" defer></script> 
 </body>
 </html>
