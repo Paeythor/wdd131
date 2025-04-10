@@ -20,7 +20,7 @@ body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
     background-color: var(--bg-dark);
-    color: var(--text-dark);
+    color: var(--text-light); /* Fixed from --text-dark to --text-light */
     padding: 0;
     text-shadow: var(--text-shadow);
 }
@@ -60,6 +60,7 @@ nav a {
 nav a:hover {
     color: var(--text-accent);
 }
+
 span {
     text-indent: 20px;
     text-align: center;
