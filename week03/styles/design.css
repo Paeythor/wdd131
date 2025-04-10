@@ -1,4 +1,4 @@
-/* Basic Styles */
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Header styles */
+
 header {
     background-color: #702963;
     color: white;
@@ -19,10 +19,10 @@ h1 {
     margin: 0;
 }
 
-/* Main content layout */
+
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
     padding: 20px;
 }
@@ -46,18 +46,18 @@ article {
     font-size: 1.5em;
 }
 
-/* Fix padding issues on div.callout */
+
 .callout {
     padding: 20px;
 }
 
-/* Make h2 in the main section span both columns */
+
 h2 {
     grid-column: span 2;
-    text-align: left; /* Align heading to the left */
+    text-align: left; 
 }
 
-/* Banner section */
+
 .banner {
     background-color: #702963;
     color: white;
@@ -65,7 +65,7 @@ h2 {
     text-align: center;
 }
 
-/* Footer styles */
+
 footer {
     text-align: left;
     padding: 20px;
