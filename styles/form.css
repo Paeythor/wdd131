@@ -42,7 +42,7 @@ h1 {
 nav ul {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    
 }
 
 nav li {
