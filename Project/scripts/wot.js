@@ -244,5 +244,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     createBookCard(wheelOfTimeBooks);
 });
-
-
