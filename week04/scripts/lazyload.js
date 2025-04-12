@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const src = image.getAttribute('data-src');
       if (src) {
         image.src = src;
-        image.classList.remove('lazy-img'); // Optionally remove the lazy class after loading
+        image.classList.remove('lazy-img'); 
       }
     };
   
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           loadLazyImage(entry.target);
-          observer.unobserve(entry.target); // Stop observing the image once it's loaded
+          observer.unobserve(entry.target); 
         }
       });
-    }, { threshold: 0.1 }); // Set threshold as needed
+    }, { threshold: 0.1 }); 
   
     lazyImages.forEach(image => {
       imageObserver.observe(image);

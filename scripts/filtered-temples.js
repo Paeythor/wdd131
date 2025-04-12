@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Set the last modified date and current year
+    
     document.getElementById("lastModified").innerHTML = document.lastModified;
 
     const today = new Date();
