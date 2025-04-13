@@ -28,7 +28,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-light);
     text-shadow: var(--text-shadow);
-    font-display: swap; /* Improve FCP if custom font is delayed */
+    font-display: swap;
 }
 
 header {
