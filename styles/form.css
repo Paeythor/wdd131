@@ -1,7 +1,7 @@
 :root {
     --text-light: #FFFACD;
     --text-accent: #FFE873;
-    --bg-dark: #3A3F44;
+    --bg-dark: #10251C;
     --highlight: #1F3D33;
     --hover: #2E5948;
     --header-bg: #0E3B3B;
@@ -94,10 +94,6 @@ form {
     background-color: var(--highlight);
     padding: 1rem;
     border-radius: 25px;
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
-    color: var(--text-light);
-    text-shadow: var(--text-shadow);
 }
 
 form div {
@@ -138,8 +134,8 @@ footer p {
 }
 
 .form-center-wrapper {
-    display: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 80vh;
 }
