@@ -1,11 +1,11 @@
 :root {
-    --text-light: #F0F0F0;
-    --text-accent: #FFD700;
-    --bg-dark: #002b2b;
-    --highlight: #224022;
-    --hover: #2e5e2e;
-    --header-bg: #00008B;
-    --footer-bg: #333333;
+    --text-light: #FFFACD;
+    --text-accent: #FFE873;
+    --bg-dark: #3A3F44;
+    --highlight: #1F3D33;
+    --hover: #2E5948;
+    --header-bg: #0E3B3B;
+    --footer-bg: #1A1A1A;
     --text-shadow: 3px 3px 5px #000000;
     --box-shadow: 0px 4px 8px #000000;
 }
@@ -20,8 +20,7 @@ body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
     background-color: var(--bg-dark);
-    color: var(--text-light); 
-    padding: 0;
+    color: var(--text-light);
     text-shadow: var(--text-shadow);
 }
 
@@ -38,6 +37,7 @@ h1 {
     margin: 0;
     text-shadow: var(--text-shadow);
 }
+
 nav li {
     margin: 0 1rem;
 }
@@ -54,9 +54,22 @@ nav a:hover {
     color: var(--text-accent);
 }
 
-span {
-    text-indent: 20px;
-    text-align: center;
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
 }
 
 .confirmation {
@@ -66,25 +79,27 @@ span {
 }
 
 .confirmation table {
-    padding: 1vw;
-    margin-left: 20vw;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
 }
 
-main {
-    max-width: 550px;
-    margin: 5rem auto;
-    padding: 2rem;
-    display: flex;
-    grid-template-columns: 3fr 1fr;
-    gap: 5rem;
-    width: 150%;
+span {
+    text-indent: 20px;
+    text-align: center;
 }
 
 form {
     background-color: var(--highlight);
-    padding: 1vw;
+    padding: 1rem;
     border-radius: 25px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    text-shadow: var(--text-shadow);
 }
+
 form div {
     margin: 10px;
     padding: 5px;
@@ -102,6 +117,7 @@ form textarea {
 
 form input[type="submit"] {
     width: 90%;
+    cursor: pointer;
 }
 
 form input[type="submit"]:hover {
@@ -122,30 +138,8 @@ footer p {
 }
 
 .form-center-wrapper {
-    display: flex;
+    display: center;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-}
-.confirmation table {
-    padding: 1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-}
-main {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 5rem;
-}
-a:focus,
-input:focus,
-textarea:focus,
-button:focus {
-    outline: 2px solid var(--text-accent);
-    outline-offset: 2px;
+    height: 85vh;
 }
