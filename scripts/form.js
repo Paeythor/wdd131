@@ -1,13 +1,13 @@
-const year_container = document.getElementById('currentYear');
-const modified_container = document.getElementById('lastModified');
+const yearContainer = document.getElementById('currentYear');
+const modifiedContainer = document.getElementById('lastModified');
 const today = new Date();
-const modified_date = new Date(document.lastModified);
+const modifiedDate = new Date(document.lastModified);
 const products = [
-    { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
-    { id: "fc-2050", name: "power laces", averagerating: 4.7 },
-    { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
-    { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
-    { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
+    { id: "fc-1888", name: "flux capacitor", averageRating: 4.5 },
+    { id: "fc-2050", name: "power laces", averageRating: 4.7 },
+    { id: "fs-1987", name: "time circuits", averageRating: 3.5 },
+    { id: "ac-2000", name: "low voltage reactor", averageRating: 3.9 },
+    { id: "jj-1969", name: "warp equalizer", averageRating: 5.0 }
 ];
 
 const selectBox = document.getElementById("products");
@@ -15,18 +15,17 @@ const selectBox = document.getElementById("products");
 products.forEach(product => {
     const option = document.createElement("option");
     option.value = product.id;
-    option.textContent = `${product.name} (Avg Rating: ${product.averagerating.toFixed(1)})`;
+    option.textContent = `${product.name} (Avg Rating: ${product.averageRating.toFixed(1)})`;
     selectBox.appendChild(option);
 });
 
-year_container.innerHTML = today.getFullYear();
-modified_container.innerHTML = `Last Modified: ${modified_date.toLocaleString()}`;
+yearContainer.innerHTML = today.getFullYear();
+modifiedContainer.innerHTML = `Last Modified: ${modifiedDate.toLocaleString()}`;
 
 window.addEventListener("load", () => {
-    let reviewCount = localStorage.getItem("reviewCount") || 0;
-    reviewCount++;
-    localStorage.setItem("reviewCount", reviewCount);
-    console.log(`Reviews completed: ${reviewCount}`);
+    let reviewCount = parseInt(localStorage.getItem("reviewCount") || "0", 10);
+    localStorage.setItem("reviewCount", reviewCount + 1);
+    console.log(`Reviews completed: ${reviewCount + 1}`);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -40,9 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isChecked) {
             alert("Please select at least one feature before submitting.");
         } else {
-            let reviewCount = localStorage.getItem("reviewCount") || 0;
-            reviewCount++;
-            localStorage.setItem("reviewCount", reviewCount);
+            let reviewCount = parseInt(localStorage.getItem("reviewCount") || "0", 10);
+            localStorage.setItem("reviewCount", reviewCount + 1);
             window.location.assign("review.html");
         }
     });

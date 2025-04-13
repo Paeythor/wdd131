@@ -7,7 +7,7 @@
     --header-bg: #0E3B3B;
     --footer-bg: #1A1A1A;
     --text-shadow: 3px 3px 5px #000;
-    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Softer */
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 *,
@@ -23,12 +23,11 @@ html {
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: var(--bg-dark);
     color: var(--text-light);
     text-shadow: var(--text-shadow);
-    font-display: swap;
 }
 
 header {
@@ -38,44 +37,13 @@ header {
     text-align: center;
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
-    contain: layout; /* Prevent repaint outside */
+    contain: layout;
 }
 
 h1 {
     margin: 0;
     font-size: 2.5rem;
     font-weight: bold;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-nav li {
-    margin: 0 1rem;
-    list-style: none;
-}
-
-nav a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    text-shadow: var(--text-shadow);
-}
-
-nav a:hover {
-    color: var(--text-accent);
-}
-
-a:focus,
-input:focus,
-textarea:focus,
-button:focus {
-    outline: 2px solid var(--text-accent);
-    outline-offset: 2px;
 }
 
 main {
@@ -89,34 +57,17 @@ main {
     contain: content;
 }
 
-.confirmation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.confirmation table {
-    padding: 1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-}
-
-span {
-    text-indent: 20px;
-    text-align: center;
-}
-
 form {
     background-color: var(--highlight);
     padding: 1rem;
     border-radius: 25px;
 }
 
-form div {
-    margin: 10px;
-    padding: 5px;
-    border: 1px solid #000;
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 form textarea {
